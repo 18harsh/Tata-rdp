@@ -16,7 +16,7 @@ def index():
 		# table = Department("Aerospace Engineering")
 
 
-		return render_template("index.html", table = table)
+		return render_template("index.html", table = table , len= len(table))
 
     # table = iitb_Mech()
 

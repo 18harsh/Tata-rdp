@@ -1,28 +1,60 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Tata-rdp</title>
-</head>
-<body>
+
+	{% extends "base.html" %}
+
+	{% block content %}
+	<div class="d-flex justify-content-center py-3 bg-primary text-light">
+		<h1>TATA Researcher Discovery Platform</h1>
+	</div>
+	<div class="d-flex justify-content-center py-3">
 	<form action="/" method="POST">
 		<label for="dept_name">Choose a department:</label>
 
 		<select name="dept_name" id="dept_name">
 		  <option value="Aerospace Engineering">Aerospace Engineering</option>
-		  <option value="Biosciences and Bioengineering">Biosciences and Bioengineering</option>
+		  <option value="Energy Science and Engineering">Energy Science and Engineering</option>
 		  <option value="Chemical Engineering">Chemical Engineering</option>
-		  <option value="Chemistry">Chemistry</option>
+		  <option value="Environmental Science and Engineering (ESED)">Environmental Science and Engineering (ESED)</option>
+		  <option value="Physics">Physics</option>
 		</select>
 		<br><br>
-		<input type="submit" name="submit" value="Submit">
-	</form>
+		<input type="submit" name="submit" value="Submit" class="bg-success py-1 px-3 text-white rounded-pill border-0">
 
-	<div>
+		<div class="input-group mt-5 ">
+		  <input type="text" class="form-control" placeholder="Research Topic (Not Working)" aria-label="Research Topic" aria-describedby="button-addon2">
+		  <div class="input-group-append">
+		    <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Button</button>
+		  </div>
+		</div>
+
+	</form>
+	</div>
+	<div class="d-flex justify-content-center py-3 px-3">
+
+		
+
 		{% if table %}
-			{{ table }}
+			<table class="table">
+			  <thead><!-- 
+			    <tr>
+			      <th scope="col">#</th>
+			      <th scope="col">First</th>
+			      <th scope="col">Last</th>
+			      <th scope="col">Handle</th>
+			    </tr>
+			  </thead> -->
+			  <tbody>
+			  	{%for i in range(0,len)%}
+			    <tr>
+			    	<th scope="row">{{i}}</th>
+		    		{%for j in table[i]%}
+				      
+				      <td>{{j.replace(" [at] ","@").replace("[at]","@")}}</td>
+		      		{%endfor%}
+			    </tr>
+			    {%endfor%}
+			  </tbody>
+			</table>
 		{% endif %}	
 	</div>
-</body>
-</html>
+
+	{% endblock %}
