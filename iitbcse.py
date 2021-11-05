@@ -1,18 +1,77 @@
 from bs4 import BeautifulSoup
 import requests
 from flask import Flask,render_template, request, redirect
-
+from requests.packages.urllib3.exceptions import InsecureRequestWarning
 
 app = Flask(__name__,static_folder='./static')
 
 @app.route("/", methods=['GET','POST'])
 def index():
-    if request.method == 'POST':
-        return render_template("index.html")
+	table = None
+	if request.method == 'POST':
+		req = request.form
+		dept_name = req['dept_name']
+		print(dept_name)
+		table = Department(dept_name)
+		# table = Department("Aerospace Engineering")
 
-    table = iitb_Mech()
 
-    return render_template("index.html", table = table)
+		return render_template("index.html", table = table)
+
+    # table = iitb_Mech()
+
+	# table = Department("Aerospace Engineering")
+	return render_template("index.html")
+
+
+
+
+def Department(dept_name):
+
+	try:
+		url = "https://www.iitb.ac.in/en/education/academic-divisions"
+
+		r = requests.get(url, verify=False)
+		htmlContent = r.content
+		soup = BeautifulSoup(htmlContent, "html.parser")
+		
+
+		for list in soup.findAll('a'):
+		    if list.text.strip() == dept_name:
+		        
+		        d = str(list.get('href'))
+		        print(d)
+		        dept = requests.get(d,verify=False)
+		        deptContent = dept.content
+		        soup_dept = BeautifulSoup(deptContent,"html.parser")
+
+		for list in soup_dept.findAll('a'):
+		    if list.text.strip() == "Faculty":
+		        f = list.get('href')
+		        print(f)
+		        try:
+		            faculty = requests.get(f,verify=False)
+		        except:
+		            faculty = requests.get(d+f, verify=False)
+		        facultyContent = faculty.content
+		        soup_faculty = BeautifulSoup(facultyContent, "html.parser")
+
+		table_body = soup_faculty.find('tbody')
+		data=[]
+		rows = table_body.find_all('tr')
+		for row in rows:
+		    cols = row.find_all('td')
+		    cols = [ele.text.strip() for ele in cols]
+		    data.append([ele for ele in cols if ele])
+
+		return data	
+	except:
+		return "Data not found"
+
+	# for i in data:
+	#     for j in i:
+	#         print(j.replace("[at]","@"))
+	    # print()
 
 
 def iitb_Mech():

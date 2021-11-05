@@ -6,9 +6,23 @@
 	<title>Tata-rdp</title>
 </head>
 <body>
+	<form action="/" method="POST">
+		<label for="dept_name">Choose a department:</label>
+
+		<select name="dept_name" id="dept_name">
+		  <option value="Aerospace Engineering">Aerospace Engineering</option>
+		  <option value="Biosciences and Bioengineering">Biosciences and Bioengineering</option>
+		  <option value="Chemical Engineering">Chemical Engineering</option>
+		  <option value="Chemistry">Chemistry</option>
+		</select>
+		<br><br>
+		<input type="submit" name="submit" value="Submit">
+	</form>
 
 	<div>
-		{{ table|safe }}
+		{% if table %}
+			{{ table }}
+		{% endif %}	
 	</div>
 </body>
 </html>

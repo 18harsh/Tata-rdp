@@ -11,11 +11,13 @@ htmlContent = r.content
 soup = BeautifulSoup(htmlContent, "html.parser")
 
 
-dept_name = input()
+# dept_name = input()
+dept_name = "Aerospace Engineering"
 print("\n")
 
 for list in soup.findAll('a'):
     if list.text.strip() == dept_name:
+        
         d = str(list.get('href'))
         print(d)
         dept = requests.get(d,verify=False)
