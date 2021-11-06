@@ -9,12 +9,24 @@
 	<form action="/" method="POST">
 		<label for="dept_name">Choose a department:</label>
 
-		<select name="dept_name" id="dept_name">
+		<select name="dept_name" id="dept_name" required>
+		  
+		  	{% if dept_name %}
+		  	<option value='{{ dept_name }}'>
+		  		{{ dept_name }}
+		  	</option>
+		  	{% else %}
+		  	<option value="" selected disabled hidden>
+		  		Choose here
+		  	</option>
+		  	{% endif %}	
+		  
 		  <option value="Aerospace Engineering">Aerospace Engineering</option>
 		  <option value="Energy Science and Engineering">Energy Science and Engineering</option>
 		  <option value="Chemical Engineering">Chemical Engineering</option>
 		  <option value="Environmental Science and Engineering (ESED)">Environmental Science and Engineering (ESED)</option>
 		  <option value="Physics">Physics</option>
+		  <option value="Biosciences and Bioengineering">Biosciences and Bioengineering</option>
 		</select>
 		<br><br>
 		<input type="submit" name="submit" value="Submit" class="bg-success py-1 px-3 text-white rounded-pill border-0">
@@ -31,10 +43,16 @@
 	<div class="d-block justify-content-center py-3 px-3">
 		<div class="d-flex justify-content-between py-3">
 			<h3>List of {{ dept_name }} Faculty</h3>
-			<!-- <form action="/" method="POST"> -->
-				<!-- <button type="submit"> Website Preview </button> -->
-				<input type="submit" class='toggle' data-toggle="toggle" name="web_prev" value="Website Preview">
-			<!-- </form> -->
+			<form action="/" method="POST">
+				<button type="submit" name="web_prev" class="btn btn-primary">
+				{% if web_prev == False %}
+				 Website Preview
+				 {% else %}
+				 Data Scraped
+				 {% endif %}
+				</button>
+				<!-- <input type="submit" class='toggle' data-toggle="toggle" name="web_prev" value="Website Preview"> -->
+			</form>
 			<!-- <input type="checkbox" class='toggle' checked data-toggle="toggle"> -->
 			 <!-- <div class='status'>Toggled</div> -->
 		</div>

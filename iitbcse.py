@@ -1,50 +1,70 @@
 from bs4 import BeautifulSoup
 import requests
-from flask import Flask,render_template, request, redirect
+from flask import Flask,render_template, request, redirect, session
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
+from flask_session import Session
 
 app = Flask(__name__,static_folder='./static')
+app.config["SESSION_PERMANENT"] = False
+app.config["SESSION_TYPE"] = "filesystem"
+Session(app)
 
 @app.route("/", methods=['GET','POST'])
 def index():
 	table = None
 	table_body = None
-	
+
 	if request.method == 'POST':
 		req = request.form
 		print(req)
-		dept_name = req['dept_name']
-		research_name = req['research_name']
-		# print(dept_name)
-		# print(research_name)
-		table,table_body = Department(dept_name)
+		req_table = req.to_dict()
+
+		if not session.get("dept_name"):
+			session['dept_name'] = req['dept_name']
+			session['research_name'] = req['research_name']
+			session['web_prev'] = False
+
+		if 'dept_name' in req_table and 'research_name' in req_table:
+			session['dept_name'] = req['dept_name']
+			session['research_name'] = req['research_name']
+			session['web_prev'] = False
+
+
+		if 'web_prev' in req_table:
+			session['web_prev'] = session.get("web_prev") == False
+			
+		# dept_name = req['dept_name']
+		# research_name = req['research_name']
+		
+		
+		# print(session.get("dept_name"))
+		# print(session.get("research_name"))
+		table,table_body = Department(session.get("dept_name"))
 		# table = Department("Aerospace Engineering")
 		
-		if research_name!="":
+		if session.get("research_name")!="":
 			filter = []
 			for i in table:
 				flag = 0
 				for j in i:
-					if research_name.lower().replace(" [at] ","@").replace("[at]","@") in j.lower().replace(" [at] ","@").replace("[at]","@"):
+					if session.get("research_name").lower().replace(" [at] ","@").replace("[at]","@") in j.lower().replace(" [at] ","@").replace("[at]","@"):
 						flag = 1
 				if flag == 1:
 					filter.append(i)
 			table = filter
 
-
-		return render_template("index.html", table = table , len= len(table), dept_name=dept_name, web_prev = False, table_body= table_body )
+		return render_template("index.html", table = table , len =  len(table) if table else 0 , dept_name=session.get("dept_name"), web_prev = session.get("web_prev"), table_body= table_body )
 
     # table = iitb_Mech()
 
 	# table = Department("Aerospace Engineering")
-	return render_template("index.html")
+	return render_template("index.html" ,len =0)
 
 
 
 
 def Department(dept_name):
 
-	try:
 		url = "https://www.iitb.ac.in/en/education/academic-divisions"
 
 		r = requests.get(url, verify=False)
@@ -73,16 +93,17 @@ def Department(dept_name):
 		        soup_faculty = BeautifulSoup(facultyContent, "html.parser")
 
 		table_body = soup_faculty.find('tbody')
-		data=[]
-		rows = table_body.find_all('tr')
-		for row in rows:
-		    cols = row.find_all('td')
-		    cols = [ele.text.strip() for ele in cols]
-		    data.append([ele for ele in cols if ele])
+		try:
+			data=[]
+			rows = table_body.find_all('tr')
+			for row in rows:
+			    cols = row.find_all('td')
+			    cols = [ele.text.strip() for ele in cols]
+			    data.append([ele for ele in cols if ele])
 
-		return data, table_body
-	except:
-		return "Data not found"
+			return data, table_body
+		except:
+			return [], table_body
 
 	# for i in data:
 	#     for j in i:
