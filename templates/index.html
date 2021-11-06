@@ -20,7 +20,7 @@
 		<input type="submit" name="submit" value="Submit" class="bg-success py-1 px-3 text-white rounded-pill border-0">
 
 		<div class="input-group mt-5 ">
-		  <input type="text" class="form-control" placeholder="Research Topic (Not Working)" aria-label="Research Topic" aria-describedby="button-addon2">
+		  <input type="text" class="form-control" placeholder="Research Topic" aria-label="Research Topic" name="research_name" aria-describedby="button-addon2">
 		  <div class="input-group-append">
 		    <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Button</button>
 		  </div>
@@ -28,33 +28,56 @@
 
 	</form>
 	</div>
-	<div class="d-flex justify-content-center py-3 px-3">
+	<div class="d-block justify-content-center py-3 px-3">
+		<div class="d-flex justify-content-between py-3">
+			<h3>List of {{ dept_name }} Faculty</h3>
+			<!-- <form action="/" method="POST"> -->
+				<!-- <button type="submit"> Website Preview </button> -->
+				<input type="submit" class='toggle' data-toggle="toggle" name="web_prev" value="Website Preview">
+			<!-- </form> -->
+			<!-- <input type="checkbox" class='toggle' checked data-toggle="toggle"> -->
+			 <!-- <div class='status'>Toggled</div> -->
+		</div>
 
-		
+		{% if len > 0 %}
+			{% if web_prev == False %}
+				<table class="table">
+				  <thead><!-- 
+				    <tr>
+				      <th scope="col">#</th>
+				      <th scope="col">First</th>
+				      <th scope="col">Last</th>
+				      <th scope="col">Handle</th>
+				    </tr>
+				  </thead> -->
+				  <tbody>
+				  	{%for i in range(0,len)%}
+				    <tr>
+				    	<th scope="row">{{i}}</th>
+			    		{%for j in table[i]%}
+					      
+					      <td>{{j.replace(" [at] ","@").replace("[at]","@")}}</td>
+			      		{%endfor%}
+				    </tr>
+				    {%endfor%}
+				  </tbody>
+				</table>
+			{% endif %}	
+			
+		{% else %}
+			{% if web_prev == False %}
+				Data not Found
+			{% endif %}	
 
-		{% if table %}
-			<table class="table">
-			  <thead><!-- 
-			    <tr>
-			      <th scope="col">#</th>
-			      <th scope="col">First</th>
-			      <th scope="col">Last</th>
-			      <th scope="col">Handle</th>
-			    </tr>
-			  </thead> -->
-			  <tbody>
-			  	{%for i in range(0,len)%}
-			    <tr>
-			    	<th scope="row">{{i}}</th>
-		    		{%for j in table[i]%}
-				      
-				      <td>{{j.replace(" [at] ","@").replace("[at]","@")}}</td>
-		      		{%endfor%}
-			    </tr>
-			    {%endfor%}
-			  </tbody>
-			</table>
 		{% endif %}	
+		{% if web_prev %}
+				<table class="table">
+					{{ table_body|safe }}
+				</table>
+		{% endif %}		
 	</div>
+	<script type="text/javascript">
+
+	</script>
 
 	{% endblock %}

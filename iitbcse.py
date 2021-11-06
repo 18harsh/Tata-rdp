@@ -8,15 +8,31 @@ app = Flask(__name__,static_folder='./static')
 @app.route("/", methods=['GET','POST'])
 def index():
 	table = None
+	table_body = None
+	
 	if request.method == 'POST':
 		req = request.form
+		print(req)
 		dept_name = req['dept_name']
-		print(dept_name)
-		table = Department(dept_name)
+		research_name = req['research_name']
+		# print(dept_name)
+		# print(research_name)
+		table,table_body = Department(dept_name)
 		# table = Department("Aerospace Engineering")
+		
+		if research_name!="":
+			filter = []
+			for i in table:
+				flag = 0
+				for j in i:
+					if research_name.lower().replace(" [at] ","@").replace("[at]","@") in j.lower().replace(" [at] ","@").replace("[at]","@"):
+						flag = 1
+				if flag == 1:
+					filter.append(i)
+			table = filter
 
 
-		return render_template("index.html", table = table , len= len(table))
+		return render_template("index.html", table = table , len= len(table), dept_name=dept_name, web_prev = False, table_body= table_body )
 
     # table = iitb_Mech()
 
@@ -64,7 +80,7 @@ def Department(dept_name):
 		    cols = [ele.text.strip() for ele in cols]
 		    data.append([ele for ele in cols if ele])
 
-		return data	
+		return data, table_body
 	except:
 		return "Data not found"
 
