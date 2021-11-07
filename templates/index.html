@@ -26,6 +26,8 @@
 		  <option value="Chemical Engineering">Chemical Engineering</option>
 		  <option value="Environmental Science and Engineering (ESED)">Environmental Science and Engineering (ESED)</option>
 		  <option value="Physics">Physics</option>
+		  <option value="Mechanical Engineering">Mechanical Engineering</option>
+		  <option value="Civil Engineering">Civil Engineering</option>
 		  <option value="Biosciences and Bioengineering">Biosciences and Bioengineering</option>
 		</select>
 		<br><br>
@@ -34,7 +36,7 @@
 		<div class="input-group mt-5 ">
 		  <input type="text" class="form-control" placeholder="Research Topic" aria-label="Research Topic" name="research_name" aria-describedby="button-addon2">
 		  <div class="input-group-append">
-		    <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Button</button>
+		    <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Search</button>
 		  </div>
 		</div>
 
@@ -89,9 +91,12 @@
 
 		{% endif %}	
 		{% if web_prev %}
+				{%for tab in table_body%}
+				 
 				<table class="table">
-					{{ table_body|safe }}
+					{{ tab|safe }}
 				</table>
+				{%endfor%}
 		{% endif %}		
 	</div>
 	<script type="text/javascript">
