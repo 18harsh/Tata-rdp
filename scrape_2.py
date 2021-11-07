@@ -70,7 +70,13 @@ soup = BeautifulSoup(htmlContent, "html.parser")
 # 'Metallurgical Engineering & Materials Science',
 # 'Physics']
 
+<<<<<<< HEAD
 departments = ['Civil Engineering']
+=======
+departments = ['Chemical Engineering']
+
+# dept_name = input()
+>>>>>>> 127f617170a429245883a3758c2f0ced48885134
 print("\n")
 for dept_name in departments:
     print(dept_name+"-------------------------------+=+++++++++++++")
@@ -172,3 +178,38 @@ for dept_name in departments:
 
 
 
+<<<<<<< HEAD
+=======
+# for list in soup.findAll('a'):
+#     if list.text.strip() == dept_name:
+        
+#         d = str(list.get('href'))
+#         print(d)
+#         dept = requests.get(d,verify=False)
+#         deptContent = dept.content
+#         soup_dept = BeautifulSoup(deptContent,"html.parser")
+
+# for list in soup_dept.findAll('a'):
+#     if list.text.strip() == "Faculty":
+#         f = list.get('href')
+#         print(f)
+#         try:
+#             faculty = requests.get(f,verify=False)
+#         except:
+#             faculty = requests.get(d+f, verify=False)
+#         facultyContent = faculty.content
+#         soup_faculty = BeautifulSoup(facultyContent, "html.parser")
+
+# table_body = soup_faculty.find('tbody')
+# data=[]
+# rows = table_body.find_all('tr')
+# for row in rows:
+#     cols = row.find_all('td')
+#     cols = [ele.text.strip() for ele in cols]
+#     data.append([ele for ele in cols if ele])
+
+# for i in data:
+#     for j in i:
+#         print(j.replace("[at]","@"))
+#     print()
+>>>>>>> 127f617170a429245883a3758c2f0ced48885134
