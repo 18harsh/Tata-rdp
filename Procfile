@@ -1,1 +1,1 @@
-web: gunicorn iitbcse:app
+web: gunicorn app:app
