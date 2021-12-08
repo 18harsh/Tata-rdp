@@ -37,7 +37,7 @@ def index():
 
 	if request.method == 'POST':
 		req = request.form
-		print(req)
+		# print(req)
 		req_table = req.to_dict()
 
 		if not session.get("dept_name"):
@@ -97,7 +97,7 @@ def Department(dept_name):
 		    if list.text.strip() == dept_name:
 		        
 		        d = str(list.get('href'))
-		        print(d)
+		        # print(d)
 		        dept = requests.get(d,verify=False)
 		        deptContent = dept.content
 		        soup_dept = BeautifulSoup(deptContent,"html.parser")
@@ -105,7 +105,7 @@ def Department(dept_name):
 		for list in soup_dept.findAll('a'):
 		    if list.text.strip() == "Faculty":
 		        f = list.get('href')
-		        print(f)
+		        # print(f)
 		        try:
 		            faculty = requests.get(f,verify=False)
 		        except:
@@ -116,7 +116,7 @@ def Department(dept_name):
 
 
 		table_body = soup_faculty.find('tbody')
-		print(table_body)
+		# print(table_body)
 		try:
 			data=[]
 			rows = table_body.find_all('tr')
