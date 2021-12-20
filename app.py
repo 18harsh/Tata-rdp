@@ -7,7 +7,7 @@ from flask_session import Session
 
 
 deptDict = {
-	'Aerospace Engineering': ['https://www.aero.iitb.ac.in/home/people/faculty'],
+	'Aerospace Engineering': ['https://www.aero.iitb.ac.in/home/people/faculty','https://www.aero.iitb.ac.in/home/people/former-faculty'],
     'Biosciences and Bioengineering':['https://www.bio.iitb.ac.in/people/faculty/'],
     'Chemical Engineering':['https://www.che.iitb.ac.in/faculty-directory'],
     'Chemistry':[],
