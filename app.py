@@ -22,8 +22,15 @@ deptDict = {
     'Mechanical Engineering':['http://www.esed.iitb.ac.in/faculty-directory','https://www.me.iitb.ac.in/?q=honorary-faculty-members'],
     'Metallurgical Engineering & Materials Science':[],
     'Physics':['https://www.phy.iitb.ac.in/en/faculty'],
-    
-}
+    'All':
+     	['https://www.aero.iitb.ac.in/home/people/faculty','https://www.aero.iitb.ac.in/home/people/former-faculty',
+	     'https://www.bio.iitb.ac.in/people/faculty/','https://www.che.iitb.ac.in/faculty-directory',
+	     'https://www.civil.iitb.ac.in/faculty','https://www.me.iitb.ac.in/?q=full-time-faculty',
+	     'http://www.esed.iitb.ac.in/faculty-directory','http://www.esed.iitb.ac.in/faculty-directory','https://www.me.iitb.ac.in/?q=honorary-faculty-members'
+	     'https://www.phy.iitb.ac.in/en/faculty'
+
+     	] 
+     }
 
 app = Flask(__name__,static_folder='./static')
 app.config["SESSION_PERMANENT"] = False
@@ -41,19 +48,25 @@ def index():
 		req_table = req.to_dict()
 
 		if not session.get("dept_name"):
-			session['dept_name'] = req['dept_name']
+			# session['dept_name'] = req['dept_name']
+			session['dept_name'] = 'All'
+
 			session['research_name'] = req['research_name']
 			session['web_prev'] = False
 
-		if 'dept_name' in req_table and 'research_name' in req_table:
-			session['dept_name'] = req['dept_name']
+		# if 'dept_name' in req_table and 'research_name' in req_table:
+		if 'research_name' in req_table:
+			# session['dept_name'] = req['dept_name']
+			session['dept_name'] = 'All'
+
 			session['research_name'] = req['research_name']
 			session['web_prev'] = False
 
 
 		if 'web_prev' in req_table:
 			session['web_prev'] = session.get("web_prev") == False
-			
+
+		print(session.get("dept_name"))
 		# dept_name = req['dept_name']
 		# research_name = req['research_name']
 		
@@ -234,5 +247,5 @@ def iitb_Mech():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True,port="5000")
 
