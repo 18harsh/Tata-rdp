@@ -23,11 +23,15 @@ deptDict = {
     'Metallurgical Engineering & Materials Science':[],
     'Physics':['https://www.phy.iitb.ac.in/en/faculty'],
     'All':
-     	['https://www.aero.iitb.ac.in/home/people/faculty','https://www.aero.iitb.ac.in/home/people/former-faculty',
-	     'https://www.bio.iitb.ac.in/people/faculty/','https://www.che.iitb.ac.in/faculty-directory',
-	     'https://www.civil.iitb.ac.in/faculty','https://www.me.iitb.ac.in/?q=full-time-faculty',
-	     'http://www.esed.iitb.ac.in/faculty-directory','http://www.esed.iitb.ac.in/faculty-directory','https://www.me.iitb.ac.in/?q=honorary-faculty-members'
-	     'https://www.phy.iitb.ac.in/en/faculty'
+     	[
+     	# 'https://www.aero.iitb.ac.in/home/people/faculty',
+     	# 'https://www.aero.iitb.ac.in/home/people/former-faculty',
+	     # 'https://www.bio.iitb.ac.in/people/faculty/','https://www.che.iitb.ac.in/faculty-directory',
+	     # 'https://www.civil.iitb.ac.in/faculty','https://www.me.iitb.ac.in/?q=full-time-faculty',
+	     # 'http://www.esed.iitb.ac.in/faculty-directory','http://www.esed.iitb.ac.in/faculty-directory','https://www.me.iitb.ac.in/?q=honorary-faculty-members'
+	     # 'https://www.phy.iitb.ac.in/en/faculty','https://en.wikipedia.org/wiki/List_of_IIT_Bombay_people',
+	     # 'https://www.iitbbs.ac.in/faculty-members.php',
+	     'https://iitpkd.ac.in/faculty-list'
 
      	] 
      }
@@ -66,7 +70,6 @@ def index():
 		if 'web_prev' in req_table:
 			session['web_prev'] = session.get("web_prev") == False
 
-		print(session.get("dept_name"))
 		# dept_name = req['dept_name']
 		# research_name = req['research_name']
 		
@@ -160,16 +163,21 @@ def DepartmentHardCoded(dept_name):
 
 		try:
 
-			table_body = soup_faculty.find('tbody')
-			# print(table_body)
-			table_body_arr.append(table_body)
-			# try:
+			table_body = soup_faculty.find_all('tbody')
 			
-			rows = table_body.find_all('tr')
-			for row in rows:
-			    cols = row.find_all('td')
-			    cols = [ele.text.strip() for ele in cols]
-			    data.append([ele for ele in cols if ele])
+			
+			for i in table_body:
+				table_body_arr.append(i.find_all('tr'))
+			# try:
+			print(table_body_arr)
+
+			for i in table_body:
+				
+				rows = i.find_all('tr')
+				for row in rows:
+				    cols = row.find_all('td')
+				    cols = [ele.text.strip() for ele in cols]
+				    data.append([ele for ele in cols if ele])
 		except:
 			faculty_dic ={}
 			for fac in soup_faculty.find_all('div'):
