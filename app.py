@@ -7,7 +7,7 @@ from flask_session import Session
 
 
 deptDict = {
-	'Aerospace Engineering': ['https://www.aero.iitb.ac.in/home/people/faculty'],
+	'Aerospace Engineering': ['https://www.aero.iitb.ac.in/home/people/faculty','https://www.aero.iitb.ac.in/home/people/former-faculty'],
     'Biosciences and Bioengineering':['https://www.bio.iitb.ac.in/people/faculty/'],
     'Chemical Engineering':['https://www.che.iitb.ac.in/faculty-directory'],
     'Chemistry':[],
@@ -22,8 +22,20 @@ deptDict = {
     'Mechanical Engineering':['http://www.esed.iitb.ac.in/faculty-directory','https://www.me.iitb.ac.in/?q=honorary-faculty-members'],
     'Metallurgical Engineering & Materials Science':[],
     'Physics':['https://www.phy.iitb.ac.in/en/faculty'],
-    
-}
+    'All':
+     	[
+     	# 'https://www.aero.iitb.ac.in/home/people/faculty',
+     	# 'https://www.aero.iitb.ac.in/home/people/former-faculty',
+	    # 'https://www.bio.iitb.ac.in/people/faculty/','https://www.che.iitb.ac.in/faculty-directory',
+	    # 'https://www.civil.iitb.ac.in/faculty','https://www.me.iitb.ac.in/?q=full-time-faculty',
+	    # 'http://www.esed.iitb.ac.in/faculty-directory','http://www.esed.iitb.ac.in/faculty-directory','https://www.me.iitb.ac.in/?q=honorary-faculty-members'
+	    # 'https://www.phy.iitb.ac.in/en/faculty','https://en.wikipedia.org/wiki/List_of_IIT_Bombay_people',
+	    # 'https://www.iitbbs.ac.in/faculty-members.php',
+	    # 'https://iitpkd.ac.in/faculty-list'
+		'http://www.iitkgp.ac.in/department/AE/faculties'
+
+     	] 
+     }
 
 app = Flask(__name__,static_folder='./static')
 app.config["SESSION_PERMANENT"] = False
@@ -37,23 +49,28 @@ def index():
 
 	if request.method == 'POST':
 		req = request.form
-		print(req)
+		# print(req)
 		req_table = req.to_dict()
 
 		if not session.get("dept_name"):
-			session['dept_name'] = req['dept_name']
+			# session['dept_name'] = req['dept_name']
+			session['dept_name'] = 'All'
+
 			session['research_name'] = req['research_name']
 			session['web_prev'] = False
 
-		if 'dept_name' in req_table and 'research_name' in req_table:
-			session['dept_name'] = req['dept_name']
+		# if 'dept_name' in req_table and 'research_name' in req_table:
+		if 'research_name' in req_table:
+			# session['dept_name'] = req['dept_name']
+			session['dept_name'] = 'All'
+
 			session['research_name'] = req['research_name']
 			session['web_prev'] = False
 
 
 		if 'web_prev' in req_table:
 			session['web_prev'] = session.get("web_prev") == False
-			
+
 		# dept_name = req['dept_name']
 		# research_name = req['research_name']
 		
@@ -97,7 +114,7 @@ def Department(dept_name):
 		    if list.text.strip() == dept_name:
 		        
 		        d = str(list.get('href'))
-		        print(d)
+		        # print(d)
 		        dept = requests.get(d,verify=False)
 		        deptContent = dept.content
 		        soup_dept = BeautifulSoup(deptContent,"html.parser")
@@ -105,7 +122,7 @@ def Department(dept_name):
 		for list in soup_dept.findAll('a'):
 		    if list.text.strip() == "Faculty":
 		        f = list.get('href')
-		        print(f)
+		        # print(f)
 		        try:
 		            faculty = requests.get(f,verify=False)
 		        except:
@@ -116,7 +133,7 @@ def Department(dept_name):
 
 
 		table_body = soup_faculty.find('tbody')
-		print(table_body)
+		# print(table_body)
 		try:
 			data=[]
 			rows = table_body.find_all('tr')
@@ -147,16 +164,21 @@ def DepartmentHardCoded(dept_name):
 
 		try:
 
-			table_body = soup_faculty.find('tbody')
-			# print(table_body)
-			table_body_arr.append(table_body)
-			# try:
+			table_body = soup_faculty.find_all('tbody')
 			
-			rows = table_body.find_all('tr')
-			for row in rows:
-			    cols = row.find_all('td')
-			    cols = [ele.text.strip() for ele in cols]
-			    data.append([ele for ele in cols if ele])
+			
+			for i in table_body:
+				table_body_arr.append(i.find_all('tr'))
+			# try:
+			print(table_body_arr)
+
+			for i in table_body:
+				
+				rows = i.find_all('tr')
+				for row in rows:
+				    cols = row.find_all('td')
+				    cols = [ele.text.strip() for ele in cols]
+				    data.append([ele for ele in cols if ele])
 		except:
 			faculty_dic ={}
 			for fac in soup_faculty.find_all('div'):
@@ -234,5 +256,5 @@ def iitb_Mech():
 
 
 if __name__ == "__main__":
-    app.run(host='127.0.0.1',port=4455,debug=True)
+    app.run(debug=True,port="5000")
 

@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 import re
-url = ["https://www.iitb.ac.in/en/education/academic-divisions"]
+url = ["https://www.google.com/search?q=iit+faculties"]
 
 #path:  home page --> Academics --> Department --> People --> faculty
 
