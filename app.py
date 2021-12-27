@@ -24,7 +24,6 @@ deptDict = {
     'Physics':['https://www.phy.iitb.ac.in/en/faculty'],
     'All':
      	[
-<<<<<<< HEAD
      	'https://www.aero.iitb.ac.in/home/people/faculty',
      	'https://www.aero.iitb.ac.in/home/people/former-faculty',
 	     'https://www.bio.iitb.ac.in/people/faculty/','https://www.che.iitb.ac.in/faculty-directory',
@@ -33,18 +32,8 @@ deptDict = {
 	     'https://www.phy.iitb.ac.in/en/faculty','https://en.wikipedia.org/wiki/List_of_IIT_Bombay_people',
 	     'https://www.iitbbs.ac.in/faculty-members.php',
 	     'https://iitpkd.ac.in/faculty-list',
-	     'https://iith.ac.in/people/faculty/'
-=======
-     	# 'https://www.aero.iitb.ac.in/home/people/faculty',
-     	# 'https://www.aero.iitb.ac.in/home/people/former-faculty',
-	    # 'https://www.bio.iitb.ac.in/people/faculty/','https://www.che.iitb.ac.in/faculty-directory',
-	    # 'https://www.civil.iitb.ac.in/faculty','https://www.me.iitb.ac.in/?q=full-time-faculty',
-	    # 'http://www.esed.iitb.ac.in/faculty-directory','http://www.esed.iitb.ac.in/faculty-directory','https://www.me.iitb.ac.in/?q=honorary-faculty-members'
-	    # 'https://www.phy.iitb.ac.in/en/faculty','https://en.wikipedia.org/wiki/List_of_IIT_Bombay_people',
-	    # 'https://www.iitbbs.ac.in/faculty-members.php',
-	    # 'https://iitpkd.ac.in/faculty-list'
-		'http://www.iitkgp.ac.in/department/AE/faculties'
->>>>>>> 891c062f3e0c25a69e60d4ff7ca69404317f12c2
+	     'https://iith.ac.in/people/faculty/',
+	     'http://www.iitkgp.ac.in/department/AE/faculties'
 
      	] 
      }
