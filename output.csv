@@ -1,38 +1,583 @@
-Prof. Abhijit Gogulapati,Structures,205 - C,25767117,abhijit[at]aero.iitb.ac.in
-Prof. P J Guruprasad,Structures,208A,25767142,pjguru[at]aero.iitb.ac.in
-Prof. Krishnendu Haldar,Structures,107B,25767114,krishnendu[at]aero.iitb.ac.in
-Prof. P. M. Mujumdar,Structures,25767116,mujumdar[at]aero.iitb.ac.in,
-Prof. Susmita Naskar,Structures,susmitanaskar[at]iitb.ac.in,,
-Prof. Amuthan A. Ramabathiran,Structures,205A,25767111,amuthan[at]aero.iitb.ac.in
-Prof. Chandra Sekher Yerramalli,Structures,25767104,chandra[at]aero.iitb.ac.in,
-Prof. N K Naik,Structures,25767101,nknaik[at]aero.iitb.ac.in,
-Prof. M. Mitra,Structures,25767117,mira[at]aero.iitb.ac.in,
-Prof. Prasad  K. S. R. K,Structures,ksrkp[at]aero.iitb.ac.in,,
-Prof. R. P. Shimpi,Structures,25767119,rpshimpi[at]aero.iitb.ac.in,
-Prof. S. C.  Lakkad,Structures,scsl[at]aero.iitb.ac.in,,
-Prof. Suryanarayan S,Structures,suri[at]aero.iitb.ac.in,,
-Prof. Rajneesh Bhardwaj,(+91)-22-25767534,rajneesh.bhardwaj 'at' [send me email if you are not a bot],"Droplets, Interfaces, Fluid Structure Interaction, CFD",
+Prof. Aravind Balan,Aerodynamics,aravindb[at]aero.iitb.ac.in,,,,
+Prof. Avijit Chatterjee,Aerodynamics,25767128,avijit[at]aero.iitb.ac.in,,,
+Prof. J.C. Mandal,Aerodynamics,208F,25767129,mandal[at]aero.iitb.ac.in,,
+Prof. V. Menezes,Aerodynamics,201-D,25767130,viren[at]aero.iitb.ac.in,,
+Prof. Vineeth Nair,Aerodynamics,208C,25767105,vineeth[at]aero.iitb.ac.in,,
+Prof. R. K. Pant,Aerodynamics,25767127,rkpant[at]aero.iitb.ac.in,,,
+Prof. Prabhu Ramachandran,Aerodynamics,25767121,prabhu[at]aero.iitb.ac.in,,,
+Prof. Dhwanil Shukla,Aerodynamics,208 E,25767119,dhwanil[at]aero.iitb.ac.in,,
+Prof. Aniruddha Sinha,Aerodynamics,208-B,25767103,as[at]aero.iitb.ac.in,,
+Prof. Hemendra Arya,Dynamics and Control,25767118,arya[at]aero.iitb.ac.in,,,
+Prof. Rohit Gupta,Dynamics and Control,Dynamics & Control Lab,25767113,rohit[at]aero.iitb.ac.in,,
+Prof. Shashi Ranjan Kumar,Dynamics and Control,Dynamics & Control Lab,25767108,srk[at]aero.iitb.ac.in,,
+Prof. Arnab Maity,Dynamics and Control,Dynamics & Control Lab,25767136,arnab[at]aero.iitb.ac.in,,
+Prof. A. M. Pradeep,Propulsion,208-D,25767125,ampradeep[at]aero.iitb.ac.in,,
+Prof. Kowsik Bodi,Propulsion,25767126,kbodi[at]aero.iitb.ac.in,,,
+Prof. Debasis Chakraborty,Propulsion,CoPT Office,25764950,debasis_copt[at]aero.iitb.ac.in,,
+Prof. Hrishikesh Gadgil,Propulsion,107,25767106,gadgil[at]aero.iitb.ac.in,,
+Prof. Sudarshan Kumar,Propulsion,201,25767124,sudar[at]aero.iitb.ac.in,,
+Prof. Nagendra Kumar,Propulsion,25767115,nagendra[at]aero.iitb.ac.in,,,
+Prof. Shripad P. Mahulikar,Propulsion,206-B 1st Floor,25767122,spm[at]aero.iitb.ac.in,,
+Prof. K. Sinha,Propulsion,25767135,krish[at]aero.iitb.ac.in,,,
+Prof. Abhijit Gogulapati,Structures,205 - C,25767117,abhijit[at]aero.iitb.ac.in,,
+Prof. P J Guruprasad,Structures,208A,25767142,pjguru[at]aero.iitb.ac.in,,
+Prof. Krishnendu Haldar,Structures,107B,25767114,krishnendu[at]aero.iitb.ac.in,,
+Prof. P. M. Mujumdar,Structures,25767116,mujumdar[at]aero.iitb.ac.in,,,
+Prof. Susmita Naskar,Structures,susmitanaskar[at]iitb.ac.in,,,,
+Prof. Amuthan A. Ramabathiran,Structures,205A,25767111,amuthan[at]aero.iitb.ac.in,,
+Prof. Chandra Sekher Yerramalli,Structures,25767104,chandra[at]aero.iitb.ac.in,,,
+Prof. N K Naik,Structures,25767101,nknaik[at]aero.iitb.ac.in,,,
+Prof. G. R.Shevare,Aerodynamics,25767112,shevare[at]aero.iitb.ac.in,,,
+Prof. Ganapathi Bhat,Aerodynamics,gbhat[at]aero.iitb.ac.in,,,,
+Prof. S. D. Sharma,Aerodynamics,25767123,sds[at]aero.iitb.ac.in,,,
+Prof. Harshad Khadilkar,Dynamics and Control,harshadk[at]iitb.ac.in,,,,
+Prof. B. N. Raghunandan,Propulsion,raghubn[at]aero.iitb.ac.in,,,,
+Prof. Bhupendra Khandelwal,Propulsion,bhupendra.khandelwal[at]aero.iitb.ac.in,,,,
+Prof. Ananthkrishnan N,Aerodynamics,akn[at]aero.iitb.ac.in,,,,
+Prof. K  Sudhakar,Aerodynamics,sudhakar[at]aero.iitb.ac.in,,,,
+Prof. Ojha S.K.,Aerodynamics,,,,,
+Prof. Aditya Paranjape,Dynamics and Control,25767110,paranjape[at]aero.iitb.ac.in,,,
+Prof. Ashok Joshi,Dynamics and Control,ashokj[at]aero.iitb.ac.in,,,,
+Prof. Chandrasekhar. J,Dynamics and Control,sekhar[at]aero.iitb.ac.in,,,,
+Prof. Hari B.  Hablani,Dynamics and Control,hbhablani[at]iitgn.ac.in,,,,
+Prof. S. P.  Bhat,Dynamics and Control,bhat[at]aero.iitb.ac.in,,,,
+Prof. B. Roy,Propulsion,25767115,aeroyia@aero.iitb.ac.in,,,
+Prof. Marathe A.G.,Propulsion,anil[at]aero.iitb.ac.in,,,,
+Prof. Sane S.K.,Propulsion,sanesk[at]aero.iitb.ac.in,,,,
+Prof. Shende R.W.,Propulsion,rws[at]aero.iitb.ac.in,,,,
+Prof. M. Mitra,Structures,25767117,mira[at]aero.iitb.ac.in,,,
+Prof. Prasad  K. S. R. K,Structures,ksrkp[at]aero.iitb.ac.in,,,,
+Prof. R. P. Shimpi,Structures,25767119,rpshimpi[at]aero.iitb.ac.in,,,
+Prof. S. C.  Lakkad,Structures,scsl[at]aero.iitb.ac.in,,,,
+Prof. Suryanarayan S,Structures,suri[at]aero.iitb.ac.in,,,,
+Jhumpa Adhikari,Professor,Core Faculty,Chemical Engineering,241,+91 (22) 2576 7245 (O),adhikari [at] iitb.ac.in
+Rajdip Bandyopadhyaya,Professor,Core Faculty,Chemical Engineering,145,+91 (22) 2576 7209  (O),rajdip [at] che.iitb.ac.in
+Jayesh Bellare,Professor,Core Faculty,Chemical Engineering,131,+91 (22) 2576 7207  (O),jb [at] iitb.ac.in
+Sharad Bhartiya,Professor,Core Faculty,Chemical Engineering,311,+91 (22) 2576 7225 (O),bhartiya [at] che.iitb.ac.in
+Swati Bhattacharya,Associate Prof.,Core Faculty,Chemical Engineering,122,7220,swaticb [at] che.iitb.ac.in
+Mani Bhushan,Professor,Core Faculty,Chemical Engineering,311,+91 (22) 2576 7214 (O),mbhushan [at] che.iitb.ac.in
+Abhijit Chatterjee,Professor,Core Faculty,CAD Center,2,+91 (22) 2576 7242 (O),abhijit [at] che.iitb.ac.in
+Ratul Dasgupta,Associate Prof.,Core Faculty,Chemical Engineering,122,91-22-2576-7235,dasgupta.ratul [at] iitb.ac.in
+Partha Sarathi Goswami,Assistant Prof.,Core Faculty,Department of Chemical engineering,151,"+91 22 2576 7230 (O), +91 (22) 2572 6895 (Fax)",psg [at] che.iitb.ac.in
+Ravindra D Gudi,Professor,Core Faculty,CAD Center,+91 (22) 2576 7231 (O),ravigudi [at] che.iitb.ac.in,
+Venkat Gundabala,Associate Prof.,Core Faculty,Chemical Engineering,241,"+91 (22) 2576 7208 (O), +91 (22) 2572 6895 (Fax)",venkatg [at] iitb.ac.in
+Sameer Jadhav,Professor,Core Faculty,Chemical Engineering,112,+91 (22) 2576 7219 (O),srjadhav [at] che.iitb.ac.in
+Sujit S Jogwar,Associate Prof.,Core Faculty,CAD center,100,+91 (22) 2576 7244,jogwar [at] iitb.ac.in
+Devang V Khakhar,Professor,Core Faculty,Chemical Engineering,151,+91 (22) 2576 7212 (O),khakhar [at] iitb.ac.in
+Guruswamy Kumaraswamy,Professor,Core Faculty,guruswamy [at] iitb.ac.in,,,
+Sanjay M Mahajani,Professor,Core Faculty,Chemical Engineering,125,+91 (22) 2576 7246 2578 2545 (O),sanjaym [at] che.iitb.ac.in
+Abhijit Majumder,Associate Prof.,Core Faculty,Chemical Engineering,136,+91-(22)-2576 7237,abhijitm [at] iitb.ac.in
+Ateeque Malani,Associate Prof.,Core Faculty,Chemical Engineering,138,"+91-22-2576 7205, +91 22 2572 6895 (Fax)",malani [at] che.iitb.ac.in
+Sarika Mehra,Professor,Core Faculty,Chemical Engineering,112,+91 (22) 2576 7221 (O),sarika [at] che.iitb.ac.in
+Anurag Mehra,Professor,Core Faculty,Chemical Engineering,222,+91 (22) 2576 7217 (O),mehra [at] iitb.ac.in
+Kannan M Moudgalya,Professor,Core Faculty,Chemical Engineering,311,+91 (22) 2576 7213 (O),kannan [at] iitb.ac.in
+Hemant Nanavati,Professor,Core Faculty,Chemical Engineering,242,+91 (22) 2576 7215(O),hnanavati [at] che.iitb.ac.in
+Santosh Noronha,Assistant Prof.,Core Faculty,Chemical Engineering,123,+91 (22) 2576 7238 (O),noronha [at] che.iitb.ac.in
+Sachin C Patwardhan,Professor,Core Faculty,CAD Centre,305,+91 (22) 2576 7211 (O),sachinp [at] che.iitb.ac.in
+Jason R. Picardo,Assistant Prof.,Core Faculty,Chemical Engineering,224,+91 (22) 2576 7247,jrpicardo [at] che.iitb.ac.in
+Sandip Roy,Associate Prof.,Core Faculty,CAD Center,131,+91 (22) 2576 7249 (O),sr [at] che.iitb.ac.in
+Supreet Saini,Professor,Core Faculty,2nd Floor  CESE-DESE,1,+91 22 2576 7216 (O),saini [at] che.iitb.ac.in
+Arindam Sarkar,Associate Prof.,Core Faculty,Chemical Engineering,125,+91 (22) 2576 7233 (O)+91 (22) 2572 6895 (Fax),asarkar [at] che.iitb.ac.in
+Jyoti Seth,Associate Prof.,Core Faculty,Chemical Engineering Department,241,+91 (22) 2576 7226+91 (22) 2572 6895 (Fax),jyoti [at] che.iitb.ac.in
+Yogendra Shastri,Associate Prof.,Core Faculty,Chemical Engineering,311,+91 (22) 2576 7203 (O),yshastri [at] iitb.ac.in
+P Sunthar,Professor,Core Faculty,Chemical Engineering,222,+91 22 2576 7229 (O),sunthar [at] che.iitb.ac.in
+Akkihebbal K Suresh,Professor,Core Faculty,Chemical Engineering,224,+91 (22) 2576 7240 (O),aksuresh [at] che.iitb.ac.in
+Bharatkumar Suthar,Assistant Prof.,Core Faculty,Department of Chemical Engineering,+91 (22) 2576 7243,bharat.k.suthar [at] iitb.ac.in,
+Rochish Madhukar Thaokar,Professor,Core Faculty,Chemical Engineering,123,+91 (22) 2576 7241 (O),rochish [at] che.iitb.ac.in
+Mahesh S Tirumkudulu,Professor,Core Faculty,Chemical Engineering,151,+91 (22) 2576 7227(O)+91 (22) 2576 8227(R),mahesh [at] che.iitb.ac.in
+Mukta Tripathy,Associate Prof.,Core Faculty,Department of Chemical engineering,222,+91 (22) 2576 7204 (O),tripathy [at] che.iitb.ac.in
+Chandra Venkataraman,Professor,Core Faculty,Chemical Engineering,321,+91 (22) 2576 7224 (O),chandra [at] che.iitb.ac.in
+K V Venkatesh,Professor,Core Faculty,Chemical Engineering,136,+91 (22) 2576 7223 (O),venks [at] che.iitb.ac.in
+Madhu  Vinjamur,Professor,Core Faculty,Chemical Engineering,302,+91 (22) 2576 7218 (O),madhu [at] che.iitb.ac.in
+Ganesh A Viswanathan,Associate Prof.,Core Faculty,Chemical Engineering,125,+91-22-2576-7222 (O),ganeshav [at] iitb.ac.in
+Pramod P Wangikar,Professor,Core Faculty,Chemical Engineering,136,+91 (22) 2576 7232 (o),wangikar [at] iitb.ac.in
+Prof. Amit Agrawal,(+91)-22-25767516,amit.agrawal 'at' [figure this out if you are not a bot],"Turbulence, PIV, Heat Transfer, Rarefied Gas Flows, Microfluidics",,,
+Prof. Alankar Alankar,(+91)-22-25769356,firstname.lastname@iitb.ac.in,"Multiscale Computational Mechanics of Materials, Crystal Plasticity, Artificial Intelligence and...",,,
+Prof. Milind Atrey,(+91)-22-25767522,matrey 'at' [figure this out if you are not a bot],"Refrigeration,Cryogenic Engineering,Cryocoolers, Cryogenic Heat Exchangers, Two phase flow heat...",,,
+Prof. B. Ravi,(+91)-22-25764399,b.ravi 'at' [iitb.ac.in],"Metal casting simulation, Medical device innovation, Smart manufacturing",,,
+Prof. Sridhar Balasubramanian,(+91)-22-25767541,sridharb 'at' [figure this out if you are not a bot],"PIV, Flow and turbulence measurement using optical means., Experimental fluid dynamics and heat...",,,
+Prof. Dipanshu Bansal,(+91)-22-25767508,dipanshu 'at' iitb.ac.in,"Vibrational spectroscopy, Nuclear materials, Nano-scale heat transfer, Phase transitions (...",,,
+Prof. Tanmay K. Bhandakkar,(+91)-22-25767537,tbhanda2 'at' [if you can figure this out you are not a bot],"Elasticity, Analytical and numerical methods, Contact Mechanics, Fracture mechanics,",,,
+Prof. U. V. Bhandarkar,(+91)-22-25767594,bhandarkar 'at' [send me email if you are not a bot],"Particulate Characterization and Emission Control, Heat transfer in nanofluids, Molecular...",,,
+Prof. Avinash Bhardwaj,(+91)-22-25767515,abhardwaj 'at' [send me email if you are not a bot],"Conic (mixed) integer programming, Linear and Non Linear Discrete Optimization, Polyhedral...",,,
+Prof. Rajneesh Bhardwaj,(+91)-22-25767534,rajneesh.bhardwaj 'at' [send me email if you are not a bot],"Droplets, Interfaces, Fluid Structure Interaction, CFD",,,
+Prof. Abhilash J.Chandy,(+91)-22-25769352,achandy 'at' [send me email if you are not a bot],"TFE, Turbulence, Computational Fluid Dynamics, LES/DNS for complex transitional and turbulent...",,,
+Prof. Arindrajit Chowdhury,(+91)-22-25767504,arindra 'at' [send me email if you are not a bot],"Combustion Visualization and Optical Diagnostics, Combustion of Energetic Materials (Propellants...",,,
+Prof. Prashant P. Date,(+91)-22-25767511,ppdate 'at' [all yours if you are not a bot],"Metal Forming Processes, Formability, Shopfloor Metallic waste processing, Powder Metallurgy,...",,,
+Prof. Amitava De,(+91)-22-25767509,amit 'at' [figure this out if you are not a bot],"Joining, Additive Manufacturing, Numerical Modeling,",,,
+Prof. Pradeep Dixit,(+91)-22-25767393,pradeep.dixit 'at' [figure this out if you are not a bot],"MEMS, Microfabrication, Microsystems Packaging, 3D Interconnections, Non-conventional Machining...",,,
+Prof. Uday N. Gaitonde,(+91)-22-25767508,gaitonde 'at' [figure this out if you are not a bot],"Heat Transfer, Thermodynamics, Energy Conversion,",,,
+Prof. P. S. Gandhi,(+91)-22-25767519,gandhi 'at' [figure this out if you are not a bot],"Robotics, Mechatronics, multi-scale manufacturing using fluid instabilities, 3D Microprinting,...",,,
+Prof. Amol A.,(+91)-22-25767399,gokhale 'at' [figure this out if you are not a bot],"Shock- Material Interactions, Metal Foams, High temperature materials, Fatigue and Fracture in...",,,
+Prof. Shivasubramanian Gopalakrishnan,(+91)-22-25767524,sgopalak 'at' 'if you can figure this you are not a bot',"Fluid Mechanics, Numerical Methods, Computational Fluid Dynamics, Geophysical Fluid Dynamics,...",,,
+Prof. Anirban Guha,(+91)-22-25767590,anirbanguha 'at' [figure this out if you are not a bot],"Modeling of human locomotion : Gait detection : Design of assistive devices, Design of machines...",,,
+Prof. Abhishek Gupta,(+91)-22-25767523,abhi.gupta 'at' [figure this out if you are not a bot],"Robotics and controls, Human-robot interaction, Assistive devices for rehabilitation.",,,
+Prof. Kannan Iyer,(+91)-22-25767544,kiyer 'at' [send me email if you are not a bot],Thermal and Fluid Engineering,,,
+Prof. Ankit Jain,(+91) 22 2576 9363,a_jain [at] iitb [dot] ac [dot] in,"Designing next-generation materials for energy applications. 
+1. Atomistic simulations...",,,
+Prof. Krishna Jonnalagadda,(+91)-22-25767538,"krishnajn 'at' [are you sure, you are not a bot ?]","Microfabrication, Multifunctional Coatings, Experimental Mechanics, Fracture Mechanics, Dynamic...",,,
+Prof. S. S. Joshi,(+91)-22-25767527,ssjoshi 'at' [figure this out if you are not a bot],"Ultra precision machining (UPM) processes, Modeling and machining of 'difficult to machine'...",,,
 Prof. Shyamprasad Karagadde,(+91)-22-25767398,s.karagadde 'at' [figure this out if you are not a bot],"Computational and Data methods,
-Solidification, Microstructures, Transport phenomena...",
-Prof. Atul Sharma,(+91)-22-25767505,atulsharma 'at' [figure this out if you are not a bot],"Computational Fluid Dynamics, Multi-Phase Flow and Heat Transfer, and Fluid Structure...",
-Dr. Anush Konayakanahalli Chandrappa,Assistant Professor,Infrastructure,"akc@iitbbs.ac.in                , anushiitkgp.ce@gmail.com",
-Dr. Arindam Sarkar,Assistant Professor,Infrastructure,+91-674 713-6606,asarkar@iitbbs.ac.in
-Dr. B. Hanumantha Rao,Assistant Professor,Infrastructure,"+91-9439739910, 674-713-6614",bhrao@iitbbs.ac.in
-Dr. Debasis Basu,Assistant Professor,Infrastructure,+91-674-713-6608,dbasu@iitbbs.ac.in
-Dr. Devesh Punera,Assistant Professor,Infrastructure,"devesh[AT]iitbbs.ac.in                , puneradevesh12[AT]gmail.com",
-Dr. Goutam Mondal,Assistant Professor,Infrastructure,+91674-713-6612,"gmondal@iitbbs.ac.in                , goutam.mondal@gmail.com"
-Dr. Jothi Saravanan Thiyagarajan,Visiting Assistant Professor,Infrastructure,+91-7008588061,tjs@iitbbs.ac.in
-Dr. Manaswini Behera,Assistant Professor,Infrastructure,0674-713 6616,manaswini@iitbbs.ac.in
-Dr. Mayank Mishra,Visiting Assistant Professor,Infrastructure,+91-674 713-6632,"mayank@iitbbs.ac.in                , mayank_mishra@outlook.in"
-Dr. Meenu Ramadas,Assistant Professor,Infrastructure,674-713-6618,meenu@iitbbs.ac.in
-Dr. Mohammad Masiur Rahaman,Assistant Professor,Infrastructure,masiurr@iitbbs.ac.in,
-Dr. P. Dinakar,"Associate Professor, HoS",Infrastructure,+91 674 2306 297,pdinakar@iitbbs.ac.in
-Dr. Partha Pratim Dey,Assistant Professor,Infrastructure,+91 674 713 6620,ppdey@iitbbs.ac.in
-Dr. Puspendu Bhunia,Associate Professor,Infrastructure,674-713-6622,pbhunia@iitbbs.ac.in
-Prof. Rabindra Kumar Panda,Visiting Professor,Infrastructure,0674-713-6624,"rkpanda@iitbbs.ac.in                , rkpanda56@gmail.com"
-Dr. Rajesh Roshan Dash,Associate Professor,Infrastructure,674-713-6628 (O),"rrdash@iitbbs.ac.in                , rajeshroshan77@gmail.com"
-Dr. Remya Neelancherry,Assistant Professor,Infrastructure,remya@iitbbs.ac.in,
-Dr. Shantanu Patra,Assistant Professor,Infrastructure,674-713-6634,"shantanupatra@iitbbs.ac.in                , patrashantanu@gmail.com"
-Dr. Sumanta Haldar,Associate Professor,Infrastructure,674-713-6636,"sumanta@iitbbs.ac.in                , sumanta.haldar@gmail.com"
-Dr. Suresh R Dash,Assistant Professor,Infrastructure,"8018355444, 674-713-6638",srdash@iitbbs.ac.in
-Dr. Umesh Chandra Sahoo,Assistant Professor,Infrastructure,+91 674 7136640,ucsahoo@iitbbs.ac.in
+Solidification, Microstructures, Transport phenomena...",,,
+Prof. V. Kartik,(+91)-22-25767540,"vkartik 'at' [sure, you are not a bot ?]","Dynamics, vibrations and control, Nano- and micro-scale devices, Electric and Hybrid Electric...",,,
+Prof. K. P. Karunakaran,(+91)-22-25767530,karuna 'at' [figure this out if you are not a bot],"Rapid Manufacturing, CNC Technology & Automation, Computer Graphics for CAM Applications,...",,,
+Prof. Shankar Krishnan,(+91)-22-25769354,kshankar 'at' [contact if you are not a bot],"Heat Transfer, Thermal Management of Electronics, Non-traditional Thermal Desalination",,,
+Prof. Makarand. Shrikrishna. Kulkarni,(+91)-22-25769355,initials of first and middlename followed by surname without gap [at] iitb [dot] ac [dot] in,"Reliability Engineering, Maintenance Planning, Quality Engineering, Digital Twins for Industry 4...",,,
+Prof. Salil S. Kulkarni,(+91)-22-25767513,salil.kulkarni 'at' [something for a non-bot],"Computational Mechanics, Applied Mechanics, Finite Element Method, Boundary Element Method, Wave...",,,
+Prof. Neeraj Kumbhakarna,(+91)-22-25767397,neeraj_k 'at' [something for a non-bot],"TFE, Combustion Visualization and Optical Diagnostics, Computational fluid dynamics and heat...",,,
+Prof. Dhanesh N. Manik,(+91)-22-25767542,dnmanik 'at' [figure this out if you are not a bot],Design Engineering,,,
+Prof. Deepak Marla,(+91)-22-25769361,dmarla 'at' [figure this out if you are not a bot],"Laser Materials Processing, Ultra-short Pulsed Laser Ablation, Electrochemical Machining,...",,,
+Prof. Sushil Mishra,(+91)-22-25767391,sushil.mishra 'at' [figure this out if you are not a bot],"Metal-forming, Microstrure, Materials Model,  Fatigue & Fracture, Residual stress, Thermo-...",,,
+Prof. Rakesh G. Mote,(+91)-22-25767529,rakesh.mote 'at' [figure this out if you are not a bot],"Focused Ion Beam (FIB) and Laser based micro/nano-fabrication, Plasmonics for sensing and beam...",,,
+Prof. Soham Mujumdar,(+91)-22-25767512,sohammujumdar 'at' iitb 'dot' ac 'dot' in,"Micro/nano manufacturing, Modeling of manufacturing processes, Electrical discharge machining (...",,,
+Prof. Janani Srree Murallidharan,(+91)-22-25769360,js.murallidharan 'at' [figure this out if you are not a bot],"Heat Transfer, Computational Fluid Dynamics, Experimental fluid dynamics and heat transfer, Flow...",,,
+Prof. S. S. Pande,(+91)-22-25767545,s.s.pande 'at' [figure this out if you are not a bot],"CAD/CAM, AI  applications (ANN, GA, ML), Algorithms for CNC machining , Additive Manufacturing,...",,,
+Prof. Dnyanesh Pawaskar,(+91)-22-25722545,lastname@iitb.ac.in,"Solid mechanics, nonlinear dynamics, engineering optimization",,,
+Prof. S. V. Prabhu,(+91)-22-25767515,svprabhu 'at' [figure this out if you are not a bot],"Fluid Mechanics, Heat Transfer, Flowmetering, Hydrokinetic turbines and wind turbines, Impinging...",,,
+Prof. Bhalchandra Puranik,(+91)-22-25767536,puranik 'at' [figure this out if you are not a bot],"Compressible Fluid Dynamics and Shock Waves, High-Knudsen Number High-Speed Internal and...",,,
+Prof. R. Ganesh,ganeshr 'at' [figure this out if you are not a bot],"Metamaterials, Waves and Vibrations, Applied Mechanics
+...",,,,
+Prof. Sripriya Ramamoorthy,(+91)-22-25769353,ramamoor [at] iitb [dot] ac [dot] in,"Acoustics, Vibrations, Hearing, Porous materials, Multi-functional materials",,,
+Prof M V Rane,(+91)-22-25767514,ranemv [at] iitb [dot] ac [dot] in,"Energy Conservation, HVAC&R and Alternate Energy Resouces",,,
+Prof. Avishek Ranjan,(+91)-22-25769362,avishekr [at] (iitb's domain),"Thermofluids engineering, Magnetohydrodynamics (MHD) and its applications (e.g. liquid metal...",,,
+Prof. Sandip Kumar Saha,(+91)-22-25767392,sandip.saha 'at' [something for a non-bot],"Heat Transfer, Computational Fluid Dynamics, Renewable energy and energy storage, Multiphase...",,,
+Prof. Vivek Sangwan,(+91)-22-25769357,vivek.sangwan 'at' [something for a non-bot],"Robotics, Mechatronics, Dynamics, Control",,,
+Prof. P. Seshu,(+91)-22-25767525,seshu 'at' [something for a non-bot],"Finite element modeling, Computational Solid Mechanics,",,,
+Prof. Darshan S. Shah,(+91)-22-25767518,d.shah 'at' iitb.ac.in,"Biomechanics, Orthopaedics, Musculoskeletal system, In-vitro testing
+...",,,
+Prof. Atul Sharma,(+91)-22-25767505,atulsharma 'at' [figure this out if you are not a bot],"Computational Fluid Dynamics, Multi-Phase Flow and Heat Transfer, and Fluid Structure...",,,
+Prof. Sreedhara Sheshadri (Head of the Department),(+91)-22-25767597,sreedhara.s@iitb.ac.in/ head.me@iitb.ac.in,"Computational Fluid Dynamics, Turbulent Combustion, Engine Combustion, LES/DNS of complex...",,,
+Prof. Amber Shrivastava,+91(22)25769358,"ashrivastava.me 'at' [are you sure, you are not a bot ?]","Solid State Joining, Additive Manufacturing, Sustainable Manufacturing, Friction Stir Welding,...",,,
+Prof. Ramesh Singh,(+91)-22-25767507,"rsingh 'at' [are you sure, you are not a bot ?]","High-speed micromachining, Flexible reconfigurable fiber laser based materials processing, Novel...",,,
+Prof. Amit Singh,+91-22-25765363,"amit.k.singh 'at' [are you sure, you are not a bot ?]","Continuum Mechanics, Multiscale methods, Statistical Mechanics, Biomechanics, Heat conduction,...",,,
+Prof. Arunkumar Sridharan,(+91)-22-25767580,"arunsri 'at' [are you sure, you are not a bot ?]","Heat Transfer, Experimental fluid dynamics and heat transfer, Two phase flow and heat transfer,...",,,
+Prof. Atul Srivastava,(+91)-22-25767531,"atulsr 'at' [are you sure, you are not a bot ?]","Heat and Mass Transfer, Two phase flows, Bioheat transfer, Optical techniques for whole field...",,,
+Prof. Shashikanth Suryanarayan,(+91)-22-25767546,"shashisn 'at' [are you sure, you are not a bot ?]","Control Systems Design, Mechatronics",,,
+Prof. Parag U. Tandaiya,(+91)-22-25767528,"parag.ut 'at' [are you sure, you are not a bot ?]","Fracture mechanics, Finite element modeling, Computational Solid Mechanics, Mechanical Behaviour...",,,
+Prof. Asim Tewari,(+91)-22-25767521,"asim.tewari 'at' [are you sure, you are not a bot ?]","Internet of Things - Product Development, Smart Manufacturing, ""Big Data"" in Manufacturing,...",,,
+Prof. Shantanu Tripathi,(+91)-22-25769359,"tripathi 'at' [are you sure, you are not a bot ?]","Sensing, learning and intelligence, Mechanical & Environmental Reliability of Electronics,...",,,
+Prof. Rajendra P. Vedula,(+91)-22-25767547,rpv 'at' [figure this out if you are not a bot],Thermal and Fluid Engineering,,,
+Prof. Nitesh P. Yelve,(+91)-22-25767597,firstname.lastname@iitb.ac.in,"Mechanical vibration, Composite materials, Structural health monitoring using ultrasonic waves,...",,,
+Shyam R. Asolekar,Professor,Core Faculty,205,+91-22-25767867,asolekar [at] iitb.ac.in,
+Srinidhi Balasubramanian,Assistant Professor,Core Faculty,310,+91-22-21595856,srinidhi [at] iitb.ac.in,
+V. S. Vamsi Botlaguduru,Assistant Professor,Core Faculty,306,+91-22-25765855,vamsi.bvs [at] iitb.ac.in,
+Abhishek Chakraborty,Assistant Professor,Core Faculty,408,+91-22-25765853,abhishekc [at] iitb.ac.in,
+Munish Chandel,Associate Professor,Core Faculty,411,+91-22-25767856,munish.chandel [at] iitb.ac.in,
+Sanjeev Chaudhari,Professor,Core Faculty,305,+91-22-25767855,sanjeev [at] iitb.ac.in,
+Anil Kumar Dikshit,Professor,Core Faculty,410,+91-22-25767862,dikshit [at] iitb.ac.in,
+Anurag Garg,Professor,Core Faculty,311,+91-22-25767861,a.garg [at] iitb.ac.in,
+Subhankar Karmakar,Professor,Core Faculty,207,+91-22-25767857,"skarmakar [at] iitb.ac.in, subhankar.karmakar [at] gmail.com",
+Suparna Mukherji,Professor,Core Faculty,513,+91-22-25767854,mitras [at] iitb.ac.in,
+Tabish Nawaz,Assistant Professor,Core Faculty,605,+91-22-25765854,tnawaz [at] iitb.ac.in,
+Harish Phuleria,Associate Professor,Core Faculty,406,+91-22-25765851,phuleria [at] iitb.ac.in,
+Manoranjan Sahu,Assistant Professor,Core Faculty,507,+91-22-25765852,mrsahu [at] iitb.ac.in,
+Virendra Sethi,Professor,Core Faculty,510,+91-22-25767809,vsethi [at] iitb.ac.in,
+Amritanshu Shriwastav,Assistant Professor,Core Faculty,512,+91-22-25767858,amritan [at] iitb.ac.in,
+Swatantra Pratap Singh,Assistant Professor,Core Faculty,405,+91-22-25767859,swatantra [at] iitb.ac.in,
+Shyam R. Asolekar,Professor,Core Faculty,205,+91-22-25767867,asolekar [at] iitb.ac.in,
+Srinidhi Balasubramanian,Assistant Professor,Core Faculty,310,+91-22-21595856,srinidhi [at] iitb.ac.in,
+V. S. Vamsi Botlaguduru,Assistant Professor,Core Faculty,306,+91-22-25765855,vamsi.bvs [at] iitb.ac.in,
+Abhishek Chakraborty,Assistant Professor,Core Faculty,408,+91-22-25765853,abhishekc [at] iitb.ac.in,
+Munish Chandel,Associate Professor,Core Faculty,411,+91-22-25767856,munish.chandel [at] iitb.ac.in,
+Sanjeev Chaudhari,Professor,Core Faculty,305,+91-22-25767855,sanjeev [at] iitb.ac.in,
+Anil Kumar Dikshit,Professor,Core Faculty,410,+91-22-25767862,dikshit [at] iitb.ac.in,
+Anurag Garg,Professor,Core Faculty,311,+91-22-25767861,a.garg [at] iitb.ac.in,
+Subhankar Karmakar,Professor,Core Faculty,207,+91-22-25767857,"skarmakar [at] iitb.ac.in, subhankar.karmakar [at] gmail.com",
+Suparna Mukherji,Professor,Core Faculty,513,+91-22-25767854,mitras [at] iitb.ac.in,
+Tabish Nawaz,Assistant Professor,Core Faculty,605,+91-22-25765854,tnawaz [at] iitb.ac.in,
+Harish Phuleria,Associate Professor,Core Faculty,406,+91-22-25765851,phuleria [at] iitb.ac.in,
+Manoranjan Sahu,Assistant Professor,Core Faculty,507,+91-22-25765852,mrsahu [at] iitb.ac.in,
+Virendra Sethi,Professor,Core Faculty,510,+91-22-25767809,vsethi [at] iitb.ac.in,
+Amritanshu Shriwastav,Assistant Professor,Core Faculty,512,+91-22-25767858,amritan [at] iitb.ac.in,
+Swatantra Pratap Singh,Assistant Professor,Core Faculty,405,+91-22-25767859,swatantra [at] iitb.ac.in,
+,,,,,,
+Amit Agrawal,"Institute chair professor, Department of Mechanical Engineering",,,,,
+C. V. Seshadri,Chemical engineer,,,,,
+Dipan Ghosh,Deputy Director from 2005 to 2006,"Theoretical physicist, originator of the Majumdar–Ghosh model.",[1],,,
+Deepak B. Phatak,"Computer scientist, Padma Shri award winner",,,,,
+Hemchandra Kekre,"Head of Computer Science Department, 1978 to 1984",Computer scientist,,,,
+G. Naresh Patwari,Chemist and Shanti Swarup Bhatnagar laureate,[2],,,,
+Manohar Vartak,Professor Emeritus of Mathematics and Statistics,Mathematician,,,,
+N. K. Naik,Professor,Aerospace engineer,,,,
+Pramod P. Wangikar,Professor at the Department of Chemical Engineering,"Bioinformatician, N-Bios laureate[3]",,,,
+Ram Puniyani,Biomedical engineer,,,,,
+Ranjith Padinhateeri,[4],,,,,
+Ravi Poovaiah,Professor at IDC School of Design,Co-designed the Indian EVM[5],,,,
+Tathagat Avatar Tulsi,Assistant Professor on contract from 2010 to 2019,Physicist,,,,
+Kannan Moudgalya,Professor Chemical Engineering at IITB,,,,,
+,,,,,,
+Jag Mundhra,1968,B.Tech. (Electrical Engineering),Film director,[6],,
+Mansoor Khan,Film director,[7][8],,,,
+Nitesh Tiwari,1996,B.Tech. (Metallurgical Engineering),Film director and screenwriter,[9][10],,
+Rajnesh Domalpalli,1984,B.Tech. (Electrical Engineering),Film director,[11],,
+Satyendra Pakhale,1991,M.Des.,"Industrial Designer, Architect",,,
+Udaya Kumar,2003; 2010,"M.Des., Ph.D.","Head of the Department of Design, IIT Guwahati",[12],,
+Vipul Goyal,2008,"B.Tech., M.Tech. (Electrical Engineering)",Stand-up comedian,[13],,
+Sameer Saxena,2006,B.Tech.,"Actor, Director and Producer. Former CCO at TVF",[14],,
+,,,,,,
+Anil Kumar,B.Tech. (Mechanical Engineering),"Senior Partner at McKinsey & Company, later convicted of insider trading",[15],,,
+Ashish Chauhan,1989,B.Tech. (Mechanical Engineering),Managing Director and Chief Executive Officer of the Bombay Stock Exchange,[16],,
+Bhavish Aggarwal,2008,B.Tech. (Computer Science and Engineering),Co-founder of Ola Cabs,[17],,
+Bharat Desai,1975,B.Tech. (Electrical Engineering),Founder of Syntel,[18],,
+Kanwal Rekhi,1967,B.Tech. (Electrical Engineering),Venture capitalist; Co-founder of Excelan,[19],,
+Nandan Nilekani,1978,B.Tech. (Electrical Engineering),Co-founder of Infosys,[20],,
+Parag Agrawal,2005,B.Tech. (Computer Science and Engineering),Chief Executive Officer of Twitter,[21],,
+Parag Saxena,1977,B.Tech. (Chemical Engineering),Co-founder and former Chief Executive Officer of New Silk Route,[22],,
+Rahul Yadav,"Joined with B.Tech. (Metallurgical Engineering)
+Later dropped out.[23]",Co-founder and former Chief Executive Officer of Housing.com,[24][25],,,
+Rajiv L. Gupta,1967,Chairman of Aptiv,[26],,,
+Ramani Ayer,1969,B.Tech. (Chemical Engineering),Former Chairman and Chief Executive Officer of The Hartford,[27],,
+Romesh Wadhwani,1969,B.Tech. (Electrical Engineering),Founder of Symphony Technology Group,[28],,
+Salil Parekh,B.Tech. (Aeronautical Engineering),Chief Executive Officer of Infosys,,,,
+Subrah Iyar,1981,Co-founder of WebEx,[29],,,
+Victor Menezes,Corporate Banker; Senior Vice Chairman of Citigroup,[30][31],,,,
+,,,,,,
+Sharada Srinivasan,1987,Archaeologist,,,,
+,,,,,,
+Colin Gonsalves,1975,B.Tech. (Civil Engineering),Senior Advocate of the Supreme Court of India,[32],,
+Jairaj Phatak,Former Municipal Commissioner of Mumbai,,,,,
+Jairam Ramesh,1975,B.Tech. (Mechanical Engineering),Former Minister of Rural Development and Member of Parliament,,,
+Jay Narayan Vyas,Former Member of the Legislative Assembly,,,,,
+Manohar Parrikar,1978,B.Tech. (Metallurgical Engineering),Former Chief Minister of Goa and Minister of Defence,[33][34],,
+Sanjiv Bhatt,1985,Former Indian Police Service officer,[35],,,
+Sharjeel Imam,2010,"B.Tech., M.Tech. (Computer Science & Engineering)",Activist,,,
+Sheel Kant Sharma,1971; 1974,M.Sc. (Physics); Ph.D. (Physics),Former Secretary General of SAARC,,,
+,,,,,,
+Apoorva D. Patel,M.Sc. (Physics),Physicist,,,,
+Hemchandra Kekre,M.Tech. (Electrical Engineering),"Head of Department of Computer Science, IIT Bombay",,,,
+K. S. Dasgupta,Ph.D.,former Director of the IISST,[36],,,
+Pranav Mistry,2005,M. Sc.,Computer Scientist and Inventor,,,
+Narendra Karmarkar,1978,B.Tech. (Electrical Engineering),Mathematician,[37],,
+Pratim Biswas,1980,"Chair of the Department of Energy, Environmental and Chemical Engineering at Washington University in St. Louis",[38],,,
+Ramakrishna V. Hosur,1973,M.Sc. (Chemistry),[39],,,
+Ravindran Kannan,1974,B.Tech. (Electrical Engineering),Mathematician; Recipient of the Fulkerson Prize and Knuth prize,[40],,
+Sarita Adve,1987,B.Tech. (Electrical Engineering),Professor of computer science at the University of Illinois at Urbana-Champaign,[41],,
+Subhash Khot,1999,Computer scientist,[42],,,
+Suhas Patankar,1965,M.Tech. (Mechanical Engineering),Mechanical Engineer,,,
+T. V. Raman,1989,M.Sc. (Mathematics),Computer scientist,[43],,
+,,,,,,
+History of IITs,,,,,,
+"Bhilai
+Bhubaneswar
+Bombay
+Dharwad
+Delhi
+Dhanbad
+Gandhinagar
+Goa
+Guwahati
+Hyderabad
+Indore
+Jammu
+Jodhpur
+Kanpur
+Kharagpur
+Mandi
+Madras
+Palakkad
+Patna
+Roorkee
+Ropar
+Tirupati
+Varanasi",,,,,,
+"Department of Industrial and Management Engineering (DIME, IIT Kanpur)
+Department of Management Studies (DMS, IIT Delhi)
+Department of Management Studies (DMS, IIT (ISM) Dhanbad)
+Department of Management Studies (DoMS, IIT Madras)
+Department of Management Studies, IIT Roorkee (DoMS, IIT Roorkee)
+Shailesh J. Mehta School of Management (SJMSoM, IIT Bombay)
+Vinod Gupta School of Management (VGSoM, IIT Kharagpur)",,,,,,
+"Joint Entrance Examination – Advanced
+Graduate Aptitude Test in Engineering
+Common Admission Test
+Joint Admission Test for M.Sc.
+Policy of Reservation
+Common Entrance Examination for Design
+Joint Seat Allocation Authority",,,,,,
+"Cultural fests
+Alcheringa
+Alma Fiesta
+Antaragni
+Anwesha
+Exodia
+Kashiyatra
+Mood Indigo
+Performing Arts Festival
+Rendezvous
+Saarang
+Spring Fest
+Srijan
+Thomso
+Technical fests
+Cognizance
+Kshitij
+Shaastra
+Techfest
+Techkriti
+Technex
+Techniche
+Wissenaire
+Sports fests
+Infinito
+Aavhan
+Agrata
+Udghosh
+Sportech
+Shaurya
+Parakram
+Sparsha
+Sangram
+Spirit","Alcheringa
+Alma Fiesta
+Antaragni
+Anwesha
+Exodia
+Kashiyatra
+Mood Indigo
+Performing Arts Festival
+Rendezvous
+Saarang
+Spring Fest
+Srijan
+Thomso","Cognizance
+Kshitij
+Shaastra
+Techfest
+Techkriti
+Technex
+Techniche
+Wissenaire","Infinito
+Aavhan
+Agrata
+Udghosh
+Sportech
+Shaurya
+Parakram
+Sparsha
+Sangram
+Spirit",,,
+"Alcheringa
+Alma Fiesta
+Antaragni
+Anwesha
+Exodia
+Kashiyatra
+Mood Indigo
+Performing Arts Festival
+Rendezvous
+Saarang
+Spring Fest
+Srijan
+Thomso",,,,,,
+"Cognizance
+Kshitij
+Shaastra
+Techfest
+Techkriti
+Technex
+Techniche
+Wissenaire",,,,,,
+"Infinito
+Aavhan
+Agrata
+Udghosh
+Sportech
+Shaurya
+Parakram
+Sparsha
+Sangram
+Spirit",,,,,,
+"IIT Bombay
+IIT Delhi
+IIT Kanpur
+IIT Kharagpur
+IIT Madras
+IIT Roorkee
+IIT (BHU) Varanasi",,,,,,
+"Institutes of Technology Act, 1961
+Institutes of National Importance
+Institutes of Eminence",,,,,,
+"AIIMSs
+IIITs
+IIMs
+IISc
+IISERs
+NITs
+NIPERs
+SPAs
+NIDs
+NIFTs
+NISER",,,,,,
+"Category
+ Commons",,,,,,
+"Alcheringa
+Alma Fiesta
+Antaragni
+Anwesha
+Exodia
+Kashiyatra
+Mood Indigo
+Performing Arts Festival
+Rendezvous
+Saarang
+Spring Fest
+Srijan
+Thomso",,,,,,
+"Cognizance
+Kshitij
+Shaastra
+Techfest
+Techkriti
+Technex
+Techniche
+Wissenaire",,,,,,
+"Infinito
+Aavhan
+Agrata
+Udghosh
+Sportech
+Shaurya
+Parakram
+Sparsha
+Sangram
+Spirit",,,,,,
+Dr. Abhijit  Datta  Banik,Assistant Professor,Basic Sciences,+06747135108,"adattabanik@iitbbs.ac.in                , banikad@gmail.com",,
+Dr. Abhishek Chowdhury,Assistant Professor,Basic Sciences,+91 6747135174,"achowdhury@iitbbs.ac.in                , achowdhurig@gmail.com",,
+Dr. Akhilesh Kumar Singh,Assistant Professor,Basic Sciences,Office: 0674-7135114.,"aksingh@iitbbs.ac.in                , akhileshiitk@gmail.com",,
+Dr. Akshay Kumar Ojha,Associate Professor,Basic Sciences,+91 674-713-5116,akojha@iitbbs.ac.in,,
+Dr. Amrita Satapathy,Assistant Professor,"Humanities, Social Sciences & Management",asatapathy@iitbbs.ac.in,,,
+Dr. Amritendu Roy,Assistant Professor,"Minerals, Metallurgical & Materials Engineering",(+91)674-713-6904,amritendu@iitbbs.ac.in,,
+Dr. Anamitra Basu,Assistant Professor,"Humanities, Social Sciences & Management",+91 674 713 6406,anamitrabasu@iitbbs.ac.in,,
+Dr. Anasuya Roychowdhury,Assistant Professor,Basic Sciences,674-713-5106,aroychowdhury@iitbbs.ac.in,,
+Dr. Aneesh M,Assistant Professor,Basic Sciences,"aneesh at iitbbs dot ac dot in                , aneeshkolappa at gmail dot com",,,
+Dr. Animesh Mandal,Associate Professor,"Minerals, Metallurgical & Materials Engineering",(+91)-674-713-6906,animesh@iitbbs.ac.in,,
+Dr. Anirban Bhattacharya,Assistant Professor,Mechanical Sciences,+91 9886557225,anirban@iitbbs.ac.in,,
+Dr. Anoop Thomas,Assistant Professor,Electrical Sciences,674-713-5760,anoopthomas@iitbbs.ac.in,,
+Dr. Anush Konayakanahalli Chandrappa,Assistant Professor,Infrastructure,"akc@iitbbs.ac.in                , anushiitkgp.ce@gmail.com",,,
+Dr. Arindam Sarkar,Assistant Professor,Infrastructure,+91-674 713-6606,asarkar@iitbbs.ac.in,,
+Dr. Arun Kumar Pradhan,Associate Professor,Mechanical Sciences,674-713-7112,akpradhan@iitbbs.ac.in,,
+Dr. Ashis Biswas,Associate Professor,Basic Sciences,06747135118,abiswas@iitbbs.ac.in,,
+Dr. Avijit Kumar,Visiting Assistant Professor,Basic Sciences,+91-(0)674 713 5176,avijitkumar@iitbbs.ac.in,,
+Prof. Axel Hofmann,Visiting Professor,"Earth, Ocean and Climate Sciences",alexhofmann@iitbbs.ac.in,,,
+Dr. B. Hanumantha Rao,Assistant Professor,Infrastructure,"+91-9439739910, 674-713-6614",bhrao@iitbbs.ac.in,,
+Dr. Bankim Chandra Mandal,Assistant Professor,Basic Sciences,0674-713-5160,bmandal(AT)iitbbs(DOT)ac(DOT)in,,
+Dr. Barathram. Ramkumar,Associate Professor,Electrical Sciences,6747135710,barathram@iitbbs.ac.in,,
+Prof. Brahma Deo,MGM Chair Professor,"Minerals, Metallurgical & Materials Engineering","(+91)-674-713-7001,+91-9935440901",bdeo@iitk.ac.in,,
+Dr. Chandrasekhar Bhamidipati,Associate Professor,Basic Sciences,0674-713-5126,chandrasekhar@iitbbs.ac.in,,
+Dr. Chandrasekhar Perumalla,Assistant Professor,Electrical Sciences,06747135756,pcsekhar@iitbbs.ac.in,,
+Dr. Chandrashekhar Narayan Bhende,Associate Professor,Electrical Sciences,0674 713 5712,cnb@iitbbs.ac.in,,
+Dr. Chetan,Assistant Professor,Mechanical Sciences,674-713-7134,chetan@iitbbs.ac.in,,
+Dr. Debadatta Swain,Assistant Professor,"Earth, Ocean and Climate Sciences",674-713-5508,dswain@iitbbs.ac.in,,
+Dr. Debalina Ghosh,Assistant Professor,Electrical Sciences,674-713-5714,deghosh@iitbbs.ac.in,,
+Dr. Debapratim Ghosh,Assistant Professor,Electrical Sciences,+91 674 713 5758,"debapratim[AT]iitbbs[DOT]ac[DOT]in, debapratim[AT]ieee[DOT]org",,
+Dr. Debasis Basu,Assistant Professor,Infrastructure,+91-674-713-6608,dbasu@iitbbs.ac.in,,
+Dr. Debi Prosad Dogra,Assistant Professor,Electrical Sciences,+91-674-713-5716,"dpdogra@iitbbs.ac.in                , debiprosadcom@gmail.com",,
+Dr. Devesh Punera,Assistant Professor,Infrastructure,"devesh[AT]iitbbs.ac.in                , puneradevesh12[AT]gmail.com",,,
+Dr. Dipankar De,Assistant Professor,Electrical Sciences,+91 - 674 - 713 - 5718,dipankar@iitbbs.ac.in,,
+Dr. Dukhabandhu Sahoo,Assistant Professor,"Humanities, Social Sciences & Management",+91 674 713 6408 (Office),dsahoo@iitbbs.ac.in,,
+Prof. G.B.Nando,Professorial Fellow,"Minerals, Metallurgical & Materials Engineering",nandogb@iitbbs.ac.in,,,
+Dr. Gaurav Bartarya,Assistant Professor,Mechanical Sciences,674-713-7114,bartarya@iitbbs.ac.in,,
+Prof. Godabarisha Mishra,Visiting Professor,"Humanities, Social Sciences & Management",,,,
+Dr. Goutam Mondal,Assistant Professor,Infrastructure,+91674-713-6612,"gmondal@iitbbs.ac.in                , goutam.mondal@gmail.com",,
+Dr. Hemant Kumar,Assistant Professor,Basic Sciences,+91-674-713-5178,hemant@iitbbs.ac.in,,
+Prof. Hrusikesh Mishra,Visiting Professor,"Earth, Ocean and Climate Sciences",674-713-5510,"hrusikesh@iitbbs.ac.in                , hrusikeshmishra@gmail.com",,
+Dr. Indrajit Jana,Assistant Professor,Basic Sciences,ijana@iitbbs.ac.in,,,
+Prof. Johannes Eugene Marie Houben,Visiting Professor,"Humanities, Social Sciences & Management",jemhouben@iitbbs.ac.in,,,
+Dr. Jothi Saravanan Thiyagarajan,Visiting Assistant Professor,Infrastructure,+91-7008588061,tjs@iitbbs.ac.in,,
+Dr. Joy Chandra Mukherjee,Assistant Professor,Electrical Sciences,674-713-5724,joy@iitbbs.ac.in,,
+Dr. Kaushik Das,Assistant Professor,"Minerals, Metallurgical & Materials Engineering",(+91)674-713-6912,kaushik@iitbbs.ac.in,,
+Dr. Kiranmayi Landu,Assistant Professor,"Earth, Ocean and Climate Sciences",+91 674 713-5512,kiranmayi@iitbbs.ac.in,,
+Dr. Kisor Kumar Sahu,Assistant Professor,"Minerals, Metallurgical & Materials Engineering",(+91)674-713-6914,kisorsahu@iitbbs.ac.in,,
+Dr. Kodanda Ram Mangipudi,Assistant Professor,"Minerals, Metallurgical & Materials Engineering",(+91)674-713-6924,kodanda@iitbbs.ac.in,,
+Dr. Kousik Samanta,Assistant Professor,Basic Sciences,06747135128,kousik@iitbbs.ac.in,,
+Dr. M. Sabarimalai Manikandan,Assistant Professor,Electrical Sciences,+91-0674-713-5726 (O),"msm@iitbbs.ac.in                , msm.sabari@gmail.com",,
+Dr. Madhusmita Dash,Assistant Professor,"Humanities, Social Sciences & Management",(+91) 9564090176,"madhusmita@iitbbs.ac.in                , madhuu.dash@gmail.com",,
+Dr. Malay Kumar Bandyopadhyay,Assistant Professor,Basic Sciences,674-713-5130,"malay@iitbbs.ac.in                , malaybnj@gmail.com",,
+Dr. Manas Mohan Mahapatra,Associate Professor,Mechanical Sciences,+91 674 713-7116,mmmahapatra@iitbbs.ac.in,,
+Dr. Manaswini Behera,Assistant Professor,Infrastructure,0674-713 6616,manaswini@iitbbs.ac.in,,
+Dr. Manoranjan Satpathy,Associate Professor,Electrical Sciences,674-713-5728,manoranjan@iitbbs.ac.in,,
+Dr. Mayank Mishra,Visiting Assistant Professor,Infrastructure,+91-674 713-6632,"mayank@iitbbs.ac.in                , mayank_mishra@outlook.in",,
+Dr. Meenu Ramadas,Assistant Professor,Infrastructure,674-713-6618,meenu@iitbbs.ac.in,,
+Dr. Mihir Kumar Das,Associate Professor,Mechanical Sciences,674-713-7118,mihirdas@iitbbs.ac.in,,
+Dr. Mihir Kumar Pandit,"Associate Professor, HoS",Mechanical Sciences,+91 674-713 7120,mihir@iitbbs.ac.in,,
+Dr. Mohammad Masiur Rahaman,Assistant Professor,Infrastructure,masiurr@iitbbs.ac.in,,,
+Prof. N. C. Sahoo,"Professor, HoS",Electrical Sciences,674-713-5732,ncsahoo@iitbbs.ac.in,,
+Dr. Naresh Chandra Sahu,Assistant Professor,"Humanities, Social Sciences & Management",+91 674 713 6410,naresh@iitbbs.ac.in,,
+Dr. Niharika Mohapatra,Assistant Professor,Basic Sciences,+91 674 713 5134,niharika@iitbbs.ac.in,,
+Dr. Nijwm Wary,Assistant Professor,Electrical Sciences,674 713 5764,nijwmwary@iitbbs.ac.in,,
+Dr. Niladri Bihari Puhan,Assistant Professor,Electrical Sciences,+91-674-713-5734,"nbpuhan[At]iitbbs.ac.in                , nbpuhan[At]gmail.com",,
+Dr. Nirmalendu Acharyya,Assistant Professor,Basic Sciences,+916747135180,nirmalendu@iitbbs.ac.in,,
+Dr. Olive Ray,Assistant Professor,Electrical Sciences,+91-674-713-5772,olive@iitbbs.ac.in,,
+Dr. P. Dinakar,"Associate Professor, HoS",Infrastructure,+91 674 2306 297,pdinakar@iitbbs.ac.in,,
+Dr. Padmalochan Bera,Assistant Professor,Electrical Sciences,0674-713-5736,plb@iitbbs.ac.in,,
+Prof. Parlapalli Venkata Satyam,"Professor, HoS",Basic Sciences,0674-713-5884,"satyam@iitbbs.ac.in                , pvsatyam22@gmail.com",,
+Dr. Partha Pratim Dey,Assistant Professor,Infrastructure,+91 674 713 6620,ppdey@iitbbs.ac.in,,
+Dr. Partha Sarathi De,Assistant Professor,"Minerals, Metallurgical & Materials Engineering",(+91)-674-713-6918,parthasarathi.de@iitbbs.ac.in,,
+Dr. Pasupureddi Vijaya Sankara Rao,Associate Professor,Electrical Sciences,+91 674 713 5778,vijay@iitbbs.ac.in,,
+Dr. Pattabhi Ramaiah Budarapu,Assistant Professor,Mechanical Sciences,+91-674-7137124,pattabhi@iitbbs.ac.in,,
+Dr. Pramod Padmanabhan,Assistant Professor,Basic Sciences,ppadmana@iitbbs.ac.in,,,
+Dr. Prasant Kumar Sahu,Associate Professor,Electrical Sciences,0674-7135738,pks@iitbbs.ac.in,,
+Dr. Prasenjit Rath,Assistant Professor,Mechanical Sciences,+91 674 713-7126,"prath@iitbbs.ac.in                , prasenjit.rath@gmail.com",,
+Dr. Pravas Ranjan Sahu,Associate Professor,Electrical Sciences,+91-674-713-5740,prs@iitbbs.ac.in,,
+Prof. Prawal Sinha,Visiting Professor,Basic Sciences,prawal@iitbbs.ac.in,,,
+Dr. Punyashree Panda,Assistant Professor,"Humanities, Social Sciences & Management","ppanda@iitbbs.ac.in                , punyashreepanda@gmail.com",,,
+Dr. Puspendu Bhunia,Associate Professor,Infrastructure,674-713-6622,pbhunia@iitbbs.ac.in,,
+Prof. R. G. Sastry,Visiting Professor,"Earth, Ocean and Climate Sciences",674-713-5514,rgsastry@iitbbs.ac.in,,
+Prof. R. V. Rajakumar,"Professor, Director",Electrical Sciences,674-713-4445,director@iitbbs.ac.in,,
+Prof. Rabi N. Mahapatra,Visiting Professor,Electrical Sciences,rnmahapatra@iitbbs.ac.in,,,
+Prof. Rabindra Kumar Panda,Visiting Professor,Infrastructure,0674-713-6624,"rkpanda@iitbbs.ac.in                , rkpanda56@gmail.com",,
+Dr. Raj K. Singh,Assistant Professor,"Earth, Ocean and Climate Sciences",+91-674-7135516,rksingh@iitbbs.ac.in,,
+Dr. Rajakumar Guduru,Assistant Professor,"Humanities, Social Sciences & Management","9052216604, 0674-713-6414","rajakumarguduru@iitbbs.ac.in                , raja.ciefl@gmail.com",,
+Dr. Rajan Jha,Associate Professor,Basic Sciences,674-713-5136,"rjha@iitbbs.ac.in                , rajaniitd@gmail.com",,
+Dr. Rajesh Roshan Dash,Associate Professor,Infrastructure,674-713-6628 (O),"rrdash@iitbbs.ac.in                , rajeshroshan77@gmail.com",,
+Dr. Rama Krushna Sabat,Assistant Professor,"Minerals, Metallurgical & Materials Engineering",0674-713-6912,rsabat@iitbbs.ac.in,,
+Dr. Remya Neelancherry,Assistant Professor,Infrastructure,remya@iitbbs.ac.in,,,
+Dr. Sabyasachi Pani,Associate Professor,Basic Sciences,674-713-5138,spani@iitbbs.ac.in,,
+Dr. Sandeep Pattnaik,Assistant Professor,"Earth, Ocean and Climate Sciences",0674-713-5500,spt@iitbbs.ac.in,,
+Dr. Sankarsan Mohapatro,Associate Professor,Electrical Sciences,0674-7135744,sankarsan[at]iitbbs[dot]ac[dot]in,,
+Prof. Saroj Kumar Nayak,Professor,Basic Sciences,+91-674-713-5140,nayaks@iitbbs.ac.in,,
+Dr. Sasidhar Kondaraju,Assistant Professor,Mechanical Sciences,0674-713-7132,sasidhar@iitbbs.ac.in,,
+Dr. Sasmita Barik,Associate Professor,Basic Sciences,0674-7135142,sasmita AT iitbbs DOT ac DOT in,,
+Dr. Satchidananda Rath,Assistant Professor,Basic Sciences,"+91 9439858204, 674-713-5144","srath@iitbbs.ac.in                , snrath08@gmail.com",,
+Dr. Satish Dhandole,Assistant Professor,Mechanical Sciences,+91 674 713 7136,satish@iitbbs.ac.in,,
+Dr. Satyanarayan Panigrahi,Associate Professor,Mechanical Sciences,+91 674 713 7138,psatyan@iitbbs.ac.in,,
+Dr. Seema Bahinipati,Assistant Professor,Basic Sciences,+91 674 713-5146,seema.bahinipati@iitbbs.ac.in,,
+Dr. Shantanu Pal,Associate Professor,Basic Sciences,0674 7135148,spal@iitbbs.ac.in,,
+Dr. Shantanu Patra,Assistant Professor,Infrastructure,674-713-6634,"shantanupatra@iitbbs.ac.in                , patrashantanu@gmail.com",,
+Dr. Shyamal Chatterjee,Associate Professor,Basic Sciences,674-713-5150,shyamal@iitbbs.ac.in,,
+Dr. Siddhartha S. Borkotoky,Assistant Professor,Electrical Sciences,+91 674 713 5780,borkotoky@iitbbs.ac.in,,
+Dr. Sivaiah Bathula,Assistant Professor,"Minerals, Metallurgical & Materials Engineering",Office: (+91)-674-713-6914; Mobile: 9958923766,sivaiahb@iitbbs.ac.in,,
+Dr. Snehasis Chowdhuri,Associate Professor,Basic Sciences,674-713-5152,snehasis@iitbbs.ac.in,,
+Dr. Soham Roychowdhury,Assistant Professor,Mechanical Sciences,674-713-7110,soham@iitbbs.ac.in,,
+Dr. Soobhankar Pati,Assistant Professor,"Minerals, Metallurgical & Materials Engineering",(+91)-674-713-6922,spati@iitbbs.ac.in,,
+Dr. Soumendra Rana,Assistant Professor,Basic Sciences,+91-674-7135154 (Office); +91-674-7135354 (Lab),soumendra@iitbbs.ac.in,,
+Dr. Soumya Prakash Dash,Assistant Professor,Electrical Sciences,+91-674-713-5774,spdash@iitbbs.ac.in,,
+Dr. Sourav Sil,Assistant Professor,"Earth, Ocean and Climate Sciences",06747135520,souravsil@iitbbs.ac.in,,
+Dr. Srikant Gollapudi,Assistant Professor,"Minerals, Metallurgical & Materials Engineering","(+91)-674-713-6916,9566288703",srikantg@iitbbs.ac.in,,
+Dr. Srikanta Patra,Assistant Professor,Basic Sciences,0674-7135156,"srikanta@iitbbs.ac.in                , patra17@gmail.com",,
+Dr. Srinivas Bhaskar Karanki,Assistant Professor,Electrical Sciences,0674-713-5746,skaranki@iitbbs.ac.in,,
+Dr. Srinivas Boppu,Assistant Professor,Electrical Sciences,06747135752,srinivas@iitbbs.ac.in,,
+Dr. Srinivas Pinisetty,Assistant Professor,Electrical Sciences,"08985679665, 674-713-5762","spinisetty@iitbbs.ac.in                , srinu85.pinisetty@gmail.com",,
+Dr. Srinivasa Ramanujam Kannan,Assistant Professor,Mechanical Sciences,0674-7137140,sramanujam@iitbbs.ac.in,,
+Dr. Subhransu Ranjan Samantaray,Associate Professor,Electrical Sciences,+91 674 713 5750,srs@iitbbs.ac.in,,
+Dr. Sudipta Saha,Assistant Professor,Electrical Sciences,"+91 9732931011, 674-713-5748",sudipta@iitbbs.ac.in,,
+Prof. Sujit Roy,Professor,Basic Sciences,674-7135158,"sroy@iitbbs.ac.in                , sujitroy.chem@gmail.com, royiitkgp@gmail.com",,
+Dr. Sumanta Haldar,Associate Professor,Infrastructure,674-713-6636,"sumanta@iitbbs.ac.in                , sumanta.haldar@gmail.com",,
+Dr. Sunil Kumar Prajapati,Assistant Professor,Basic Sciences,674-713-5160,skprajapati@iitbbs.ac.in,,
+Dr. Suresh R Dash,Assistant Professor,Infrastructure,"8018355444, 674-713-6638",srdash@iitbbs.ac.in,,
+Dr. Suvradip Mullick,Assistant Professor,Mechanical Sciences,674-713-7142,suvradip@iitbbs.ac.in,,
+Prof. Swarup Kumar Mahapatra,"Professor, HoS (SHSSM)",Mechanical Sciences,+91 674 713 7144,swarup@iitbbs.ac.in,,
+Dr. Syed Hilal Farooq,Assistant Professor,"Earth, Ocean and Climate Sciences",674-713-5522,hilalfarooq@iitbbs.ac.in,,
+Prof. T.V.S. Sekhar,"Professor, HoS",Basic Sciences,"+91 674 7135100 (HoS), +91 674 713 5162",sekhartvs@iitbbs.ac.in,,
+Dr. Tabrez Khan,Assistant Professor,Basic Sciences,0674 7135164,tabrez@iitbbs.ac.in,,
+Dr. Tarakanta Nayak,Associate Professor,Basic Sciences,674-713-5166,tnayakATiitbbsDOTacDOTin,,
+Prof. U. C. Mohanty,Visiting Professor,"Earth, Ocean and Climate Sciences",+91 674 713 5524,"ucmohanty@iitbbs.ac.in                , ucmohanty@gmail.com",,
+Dr. Umesh Chandra Sahoo,Assistant Professor,Infrastructure,+91 674 7136640,ucsahoo@iitbbs.ac.in,,
+Dr. V. Pandu Ranga,Associate professor,Mechanical Sciences,"977 621 9149, 674-713-7122","pandu@iitbbs.ac.in                , panduvundavilli@gmail.com",,
+Prof. V. R. Pedireddi,Professor,Basic Sciences,674-713-5168,"deansa@iitbbs.ac.in, vr.pedireddi@iitbbs.ac.in",,
+Dr. Vasudeva Rao Allu,Associate Professor,Basic Sciences,+91-674-7135120,"avrao@iitbbs.ac.in                , alluvasudevarao(AT)gmail(DOT)com",,
+Dr. Venugopal Arumuru,Assistant Professor,Mechanical Sciences,06747137146,venugopal@iitbbs.ac.in,,
+Dr. Vijayakrishna Kari,Associate Professor,Basic Sciences,+91 674 713 5122,"kvijayakrishna@iitbbs.ac.in                , vijayakrishnakari@gmail.com",,
+Prof. Vinoj. V,Assistant Professor,"Earth, Ocean and Climate Sciences",+91-674 713-5526,vinoj[at]iitbbs.ac.in,,
+Dr. Yengkhom Kesorjit Singh,Assistant Professor,"Earth, Ocean and Climate Sciences",06371119583,yksingh@iitbbs.ac.in,,
+Dr. Yogesh G. Bhumkar,Assistant Professor,Mechanical Sciences,+91-674-713-7148,"bhumkar@iitbbs.ac.in                , bhumkaryogesh@gmail.com",,

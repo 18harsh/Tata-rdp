@@ -1,6 +1,6 @@
 from bs4 import BeautifulSoup
 import requests
-from flask import Flask,render_template, request, redirect, session,Response
+from flask import Flask,render_template, request, redirect, session, send_file
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
 from flask_session import Session
 import pandas as pd
@@ -108,13 +108,9 @@ def index():
 
 
 def downloadCsv(table):
-	# my_df = pd.DataFrame(table)
-	# my_df.to_csv('output.csv', index=False, header=False)
-	Response(
-        table,
-        mimetype="text/csv",
-        headers={"Content-disposition":
-                 "attachment; filename=rdp-output.csv"})
+	my_df = pd.DataFrame(table)
+	my_df.to_csv('output.csv', index=False, header=False)
+	return send_file('output.csv', attachment_filename='rdp-output.csv', as_attachment=True)
 
 def DepartmentHardCoded(dept_name):
 
