@@ -45,6 +45,13 @@
 	<div class="d-block justify-content-center py-3 px-3">
 		<div class="d-flex justify-content-between py-3">
 			<h3>List of {{ dept_name }} Faculty</h3>
+
+			<form action="/" method="POST">
+				<button type="submit" name="download-csv" class="btn btn-primary">
+					Download Csv
+				</button>
+			</form>
+			
 			<form action="/" method="POST">
 				<button type="submit" name="web_prev" class="btn btn-primary">
 				{% if web_prev == False %}
