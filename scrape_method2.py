@@ -16,9 +16,12 @@ requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 
 
 
-dept = input("Enter Department")
-university = input("Enter University")
-query = dept + " " + university + " research faculty in India"
+# dept = input("Enter Department")
+# university = input("Enter University")
+# query = dept + " " + university + " research faculty in India"
+query = "iit faculty name"
+
+
 
 url_list = []
 for j in search(query, tld="co.in", num=5, stop=5, pause=2):
