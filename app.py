@@ -96,7 +96,12 @@ def index():
 
 		if 'download-csv' in req_table:
 			if(table !=None):
-				downloadCsv(table)
+				my_df = pd.DataFrame(table)
+				my_df.to_csv('output.csv', index=False, header=False)
+				return send_file('output.csv',
+                     mimetype='text/csv',
+                     attachment_filename='rdp-output.csv',
+                     as_attachment=True)
 
 
 		return render_template("index.html", table = table , len =  len(table) if table else 0 , dept_name=session.get("dept_name"), web_prev = session.get("web_prev"), table_body= table_body )
@@ -107,10 +112,7 @@ def index():
 	return render_template("index.html" ,len =0)
 
 
-def downloadCsv(table):
-	my_df = pd.DataFrame(table)
-	my_df.to_csv('output.csv', index=False, header=False)
-	return send_file('output.csv', attachment_filename='rdp-output.csv', as_attachment=True)
+
 
 def DepartmentHardCoded(dept_name):
 
