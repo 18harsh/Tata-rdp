@@ -1,9 +1,9 @@
 from bs4 import BeautifulSoup
 import requests
-from flask import Flask,render_template, request, redirect, session
+from flask import Flask,render_template, request, redirect, session, send_file
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
 from flask_session import Session
-
+import pandas as pd
 
 
 deptDict = {
@@ -24,15 +24,16 @@ deptDict = {
     'Physics':['https://www.phy.iitb.ac.in/en/faculty'],
     'All':
      	[
-     	# 'https://www.aero.iitb.ac.in/home/people/faculty',
-     	# 'https://www.aero.iitb.ac.in/home/people/former-faculty',
-	    # 'https://www.bio.iitb.ac.in/people/faculty/','https://www.che.iitb.ac.in/faculty-directory',
-	    # 'https://www.civil.iitb.ac.in/faculty','https://www.me.iitb.ac.in/?q=full-time-faculty',
-	    # 'http://www.esed.iitb.ac.in/faculty-directory','http://www.esed.iitb.ac.in/faculty-directory','https://www.me.iitb.ac.in/?q=honorary-faculty-members'
-	    # 'https://www.phy.iitb.ac.in/en/faculty','https://en.wikipedia.org/wiki/List_of_IIT_Bombay_people',
-	    # 'https://www.iitbbs.ac.in/faculty-members.php',
-	    # 'https://iitpkd.ac.in/faculty-list'
-		'http://www.iitkgp.ac.in/department/AE/faculties'
+     	'https://www.aero.iitb.ac.in/home/people/faculty',
+     	'https://www.aero.iitb.ac.in/home/people/former-faculty',
+	     'https://www.bio.iitb.ac.in/people/faculty/','https://www.che.iitb.ac.in/faculty-directory',
+	     'https://www.civil.iitb.ac.in/faculty','https://www.me.iitb.ac.in/?q=full-time-faculty',
+	     'http://www.esed.iitb.ac.in/faculty-directory','http://www.esed.iitb.ac.in/faculty-directory','https://www.me.iitb.ac.in/?q=honorary-faculty-members'
+	     'https://www.phy.iitb.ac.in/en/faculty','https://en.wikipedia.org/wiki/List_of_IIT_Bombay_people',
+	     'https://www.iitbbs.ac.in/faculty-members.php',
+	     'https://iitpkd.ac.in/faculty-list',
+	     'https://iith.ac.in/people/faculty/',
+	     'http://www.iitkgp.ac.in/department/AE/faculties'
 
      	] 
      }
@@ -71,6 +72,7 @@ def index():
 		if 'web_prev' in req_table:
 			session['web_prev'] = session.get("web_prev") == False
 
+
 		# dept_name = req['dept_name']
 		# research_name = req['research_name']
 		
@@ -79,6 +81,7 @@ def index():
 		# print(session.get("research_name"))
 		table,table_body = DepartmentHardCoded(session.get("dept_name"))
 		# table = Department("Aerospace Engineering")
+		
 		
 		if session.get("research_name")!="":
 			filter = []
@@ -91,6 +94,16 @@ def index():
 					filter.append(i)
 			table = filter
 
+		if 'download-csv' in req_table:
+			if(table !=None):
+				my_df = pd.DataFrame(table)
+				my_df.to_csv('output.csv', index=False, header=False)
+				return send_file('output.csv',
+                     mimetype='text/csv',
+                     attachment_filename='rdp-output.csv',
+                     as_attachment=True)
+
+
 		return render_template("index.html", table = table , len =  len(table) if table else 0 , dept_name=session.get("dept_name"), web_prev = session.get("web_prev"), table_body= table_body )
 
     # table = iitb_Mech()
@@ -98,6 +111,72 @@ def index():
 	# table = Department("Aerospace Engineering")
 	return render_template("index.html" ,len =0)
 
+
+
+
+def DepartmentHardCoded(dept_name):
+
+	data=[]
+	table_body_arr=[]
+	for link in deptDict[dept_name]:
+		
+		faculty = requests.get(link, verify=False)
+		# faculty = requests.get('https://www.me.iitb.ac.in/?q=full-time-faculty',verify=False)
+		facultyContent = faculty.content
+		soup_faculty = BeautifulSoup(facultyContent, "html.parser")
+
+		try:
+
+			table_body = soup_faculty.find_all('tbody')
+			
+			
+			for i in table_body:
+				table_body_arr.append(i.find_all('tr'))
+			# try:
+			# print(table_body_arr)
+
+			for i in table_body:
+				
+				rows = i.find_all('tr')
+				for row in rows:
+				    cols = row.find_all('td')
+				    cols = [ele.text.strip() for ele in cols]
+				    data.append([ele for ele in cols if ele])
+		except:
+			faculty_dic ={}
+			for fac in soup_faculty.find_all('div'):
+			    if fac not in faculty_dic:
+			        faculty_dic[fac] = 1
+			    else:
+			        faculty_dic[fac] = faculty_dic[fac]+1
+
+
+			# table_body_arr.append(soup_faculty)
+			final = []
+			for i,j in faculty_dic.items():
+			    if j>1:
+			        for k in soup_faculty.find_all('div'):
+			            if k == i:
+			            	# table_body_arr.append(k)
+			            	if k['class'] not in final:
+			            		final.append(k['class'])
+			for i in final:
+			    for j in i:
+			        facu = soup_faculty.findAll("div", {"class":j})
+
+			for i in facu:
+
+				if i.text.strip() != "":
+					data.append([i.text.strip()])
+
+	return data, table_body_arr
+	# except:
+	# 	return [], table_body
+
+	# for i in data:
+	#     for j in i:
+	#         print(j.replace("[at]","@"))
+	    # print()
 
 
 
@@ -151,69 +230,6 @@ def Department(dept_name):
 	#         print(j.replace("[at]","@"))
 	    # print()
 
-def DepartmentHardCoded(dept_name):
-
-	data=[]
-	table_body_arr=[]
-	for link in deptDict[dept_name]:
-		
-		faculty = requests.get(link, verify=False)
-		# faculty = requests.get('https://www.me.iitb.ac.in/?q=full-time-faculty',verify=False)
-		facultyContent = faculty.content
-		soup_faculty = BeautifulSoup(facultyContent, "html.parser")
-
-		try:
-
-			table_body = soup_faculty.find_all('tbody')
-			
-			
-			for i in table_body:
-				table_body_arr.append(i.find_all('tr'))
-			# try:
-			print(table_body_arr)
-
-			for i in table_body:
-				
-				rows = i.find_all('tr')
-				for row in rows:
-				    cols = row.find_all('td')
-				    cols = [ele.text.strip() for ele in cols]
-				    data.append([ele for ele in cols if ele])
-		except:
-			faculty_dic ={}
-			for fac in soup_faculty.find_all('div'):
-			    if fac not in faculty_dic:
-			        faculty_dic[fac] = 1
-			    else:
-			        faculty_dic[fac] = faculty_dic[fac]+1
-
-
-			# table_body_arr.append(soup_faculty)
-			final = []
-			for i,j in faculty_dic.items():
-			    if j>1:
-			        for k in soup_faculty.find_all('div'):
-			            if k == i:
-			            	# table_body_arr.append(k)
-			            	if k['class'] not in final:
-			            		final.append(k['class'])
-			for i in final:
-			    for j in i:
-			        facu = soup_faculty.findAll("div", {"class":j})
-
-			for i in facu:
-
-				if i.text.strip() != "":
-					data.append([i.text.strip()])
-
-	return data, table_body_arr
-	# except:
-	# 	return [], table_body
-
-	# for i in data:
-	#     for j in i:
-	#         print(j.replace("[at]","@"))
-	    # print()
 
 
 def iitb_Mech():
