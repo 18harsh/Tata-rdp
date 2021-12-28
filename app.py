@@ -83,6 +83,7 @@ deptDict = {
      	],
     	'query': 'indian engineering faculty names'
     	},
+
      	
      }
 
@@ -109,13 +110,18 @@ def index():
 			session['dept_name'] = req['dept_name']
 			# session['dept_name'] = 'All'
 
-			# session['research_name'] = req['research_name']
+			session['research_name'] = ""
 			session['web_prev'] = False
 
 		# if 'dept_name' in req_table and 'research_name' in req_table:
 		if 'research_name' in req_table:
 			# session['dept_name'] = req['dept_name']
-			# session['dept_name'] = 'All'
+			session['dept_name'] = req['research_name']
+
+			deptDict[req['research_name']] = { 
+		    	'list':[],
+		    	'query': req['research_name']+ ' indian faculty list'
+		    }
 
 			session['research_name'] = req['research_name']
 			session['web_prev'] = False
@@ -135,16 +141,16 @@ def index():
 		# table = Department("Aerospace Engineering")
 		
 		
-		if session.get("research_name")!="":
-			filter = []
-			for i in table:
-				flag = 0
-				for j in i:
-					if session.get("research_name").lower().replace(" [at] ","@").replace("[at]","@") in j.lower().replace(" [at] ","@").replace("[at]","@"):
-						flag = 1
-				if flag == 1:
-					filter.append(i)
-			table = filter
+		# if session.get("research_name")!="":
+		# 	filter = []
+		# 	for i in table:
+		# 		flag = 0
+		# 		for j in i:
+		# 			if session.get("research_name").lower().replace(" [at] ","@").replace("[at]","@") in j.lower().replace(" [at] ","@").replace("[at]","@"):
+		# 				flag = 1
+		# 		if flag == 1:
+		# 			filter.append(i)
+		# 	table = filter
 
 		if 'download-csv' in req_table:
 			if(table !=None):
