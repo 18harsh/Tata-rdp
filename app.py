@@ -106,7 +106,7 @@ def index():
 		print("==========================================================================================")
 
 
-		if not session.get("dept_name") or 'dept_name' in req_table:
+		if 'dept_name' in req_table:
 			session['dept_name'] = req['dept_name']
 			# session['dept_name'] = 'All'
 
