@@ -4,38 +4,88 @@ from flask import Flask,render_template, request, redirect, session, send_file
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
 from flask_session import Session
 import pandas as pd
-
+try:
+    from googlesearch import search
+except ImportError:
+    print("No module named 'google' found")
 
 deptDict = {
-	'Aerospace Engineering': ['https://www.aero.iitb.ac.in/home/people/faculty','https://www.aero.iitb.ac.in/home/people/former-faculty'],
-    'Biosciences and Bioengineering':['https://www.bio.iitb.ac.in/people/faculty/'],
-    'Chemical Engineering':['https://www.che.iitb.ac.in/faculty-directory'],
-    'Chemistry':[],
-    'Civil Engineering':['https://www.civil.iitb.ac.in/faculty'],
-    'Computer Science & Engineering':[],
-    'Earth Sciences':[],
-    'Electrical Engineering':[],
-    'Energy Science and Engineering':['https://www.me.iitb.ac.in/?q=full-time-faculty'],
-    'Environmental Science and Engineering (ESED)':['http://www.esed.iitb.ac.in/faculty-directory'],
-    'Humanities & Social Sciences':[],
-    'Mathematics':[],
-    'Mechanical Engineering':['http://www.esed.iitb.ac.in/faculty-directory','https://www.me.iitb.ac.in/?q=honorary-faculty-members'],
-    'Metallurgical Engineering & Materials Science':[],
-    'Physics':['https://www.phy.iitb.ac.in/en/faculty'],
-    'All':
-     	[
+	'Aerospace Engineering': {
+		'list': ['https://www.aero.iitb.ac.in/home/people/faculty','https://www.aero.iitb.ac.in/home/people/former-faculty'],
+		'query': 'iit Aerospace Engineer faculty name',
+		},
+    'Biosciences and Bioengineering':{
+    	'list':['https://www.bio.iitb.ac.in/people/faculty/'],
+    	'query': 'iit Biosciences and Bioengineer faculty name',
+    	},
+    'Chemical Engineering':{
+    	'list':['https://www.che.iitb.ac.in/faculty-directory'],
+    	'query': 'iit Chemical Engineer faculty name',
+    	},
+    'Chemistry':{ 
+    	'list':[],
+    	'query': ''
+    },
+    'Civil Engineering':{ 
+    	'list':['https://www.civil.iitb.ac.in/faculty'],
+    	'query': ''
+    },
+    'Computer Science & Engineering':{ 
+    	'list':[],
+    	'query': ''
+    },
+    'Earth Sciences':{ 
+    	'list':[],
+    	'query': ''
+    },
+    'Electrical Engineering':{ 
+    	'list':[],
+    	'query': ''
+    },
+    'Energy Science and Engineering':{ 
+    	'list':['https://www.me.iitb.ac.in/?q=full-time-faculty'],
+    	'query': ''
+    },
+    'Environmental Science and Engineering (ESED)':{ 
+    	'list':['http://www.esed.iitb.ac.in/faculty-directory'],
+    	'query': ''
+    },
+    'Humanities & Social Sciences':{ 
+    	'list':[],
+    	'query': ''
+    },
+    'Mathematics':{ 
+    	'list':[],
+    	'query': ''
+    },
+    'Mechanical Engineering':{ 
+    	'list':['http://www.esed.iitb.ac.in/faculty-directory','https://www.me.iitb.ac.in/?q=honorary-faculty-members'],
+    	'query': ''
+    },
+    'Metallurgical Engineering & Materials Science':{ 
+    	'list':[],
+    	'query': ''
+    },
+    'Physics':{ 
+    	'list':['https://www.phy.iitb.ac.in/en/faculty'],
+    	'query': ''
+    },
+    'All': { 
+    	'list':[
      	'https://www.aero.iitb.ac.in/home/people/faculty',
      	'https://www.aero.iitb.ac.in/home/people/former-faculty',
 	     'https://www.bio.iitb.ac.in/people/faculty/','https://www.che.iitb.ac.in/faculty-directory',
 	     'https://www.civil.iitb.ac.in/faculty','https://www.me.iitb.ac.in/?q=full-time-faculty',
-	     'http://www.esed.iitb.ac.in/faculty-directory','http://www.esed.iitb.ac.in/faculty-directory','https://www.me.iitb.ac.in/?q=honorary-faculty-members'
+	     'http://www.esed.iitb.ac.in/faculty-directory','http://www.esed.iitb.ac.in/faculty-directory','https://www.me.iitb.ac.in/?q=honorary-faculty-members',
 	     'https://www.phy.iitb.ac.in/en/faculty','https://en.wikipedia.org/wiki/List_of_IIT_Bombay_people',
 	     'https://www.iitbbs.ac.in/faculty-members.php',
 	     'https://iitpkd.ac.in/faculty-list',
 	     'https://iith.ac.in/people/faculty/',
 	     'http://www.iitkgp.ac.in/department/AE/faculties'
-
-     	] 
+     	],
+    	'query': 'indian engineering faculty names'
+    	},
+     	
      }
 
 app = Flask(__name__,static_folder='./static')
@@ -52,18 +102,22 @@ def index():
 		req = request.form
 		# print(req)
 		req_table = req.to_dict()
+		print("==========================================================================================")
+		print(req_table)
+		print("==========================================================================================")
 
-		if not session.get("dept_name"):
-			# session['dept_name'] = req['dept_name']
-			session['dept_name'] = 'All'
 
-			session['research_name'] = req['research_name']
+		if not session.get("dept_name") or 'dept_name' in req_table:
+			session['dept_name'] = req['dept_name']
+			# session['dept_name'] = 'All'
+
+			# session['research_name'] = req['research_name']
 			session['web_prev'] = False
 
 		# if 'dept_name' in req_table and 'research_name' in req_table:
 		if 'research_name' in req_table:
 			# session['dept_name'] = req['dept_name']
-			session['dept_name'] = 'All'
+			# session['dept_name'] = 'All'
 
 			session['research_name'] = req['research_name']
 			session['web_prev'] = False
@@ -113,12 +167,25 @@ def index():
 
 
 
+def getLink(dept_name):
+
+	 
+	query = "Chemistry iit faculty name"
+
+	for j in search(query, tld="co.in", num=10, stop=10, pause=2):
+	    deptDict[dept_name]['list'].append(j)
+
+
 
 def DepartmentHardCoded(dept_name):
 
 	data=[]
 	table_body_arr=[]
-	for link in deptDict[dept_name]:
+
+
+	getLink(dept_name)
+	print(deptDict[dept_name]['list'])
+	for link in deptDict[dept_name]['list']:
 		
 		faculty = requests.get(link, verify=False)
 		# faculty = requests.get('https://www.me.iitb.ac.in/?q=full-time-faculty',verify=False)
@@ -272,5 +339,5 @@ def iitb_Mech():
 
 
 if __name__ == "__main__":
-    app.run(debug=True,port="5000")
+	app.run(debug=True,port="5000")
 
