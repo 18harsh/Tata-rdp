@@ -4,10 +4,8 @@ from flask import Flask,render_template, request, redirect, session, send_file
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
 from flask_session import Session
 import pandas as pd
-try:
-    from googlesearch import search
-except ImportError:
-    print("No module named 'google' found")
+from googlesearch import search
+
 
 deptDict = {
 	'Aerospace Engineering': {
@@ -28,7 +26,7 @@ deptDict = {
     },
     'Civil Engineering':{ 
     	'list':['https://www.civil.iitb.ac.in/faculty'],
-    	'query': ''
+    	'query': 'iit Civil Engineer faculty name'
     },
     'Computer Science & Engineering':{ 
     	'list':[],
@@ -44,11 +42,11 @@ deptDict = {
     },
     'Energy Science and Engineering':{ 
     	'list':['https://www.me.iitb.ac.in/?q=full-time-faculty'],
-    	'query': ''
+    	'query': 'iit Energy Science Engineer faculty name'
     },
     'Environmental Science and Engineering (ESED)':{ 
     	'list':['http://www.esed.iitb.ac.in/faculty-directory'],
-    	'query': ''
+    	'query': 'iit Environmental Science Engineer faculty name'
     },
     'Humanities & Social Sciences':{ 
     	'list':[],
@@ -60,7 +58,7 @@ deptDict = {
     },
     'Mechanical Engineering':{ 
     	'list':['http://www.esed.iitb.ac.in/faculty-directory','https://www.me.iitb.ac.in/?q=honorary-faculty-members'],
-    	'query': ''
+    	'query': 'iit Mechanical Engineer faculty name'
     },
     'Metallurgical Engineering & Materials Science':{ 
     	'list':[],
@@ -68,7 +66,7 @@ deptDict = {
     },
     'Physics':{ 
     	'list':['https://www.phy.iitb.ac.in/en/faculty'],
-    	'query': ''
+    	'query': 'iit Physics Engineer faculty name'
     },
     'All': { 
     	'list':[
@@ -168,11 +166,8 @@ def index():
 
 
 def getLink(dept_name):
-
-	 
-	query = "Chemistry iit faculty name"
-
-	for j in search(query, tld="co.in", num=10, stop=10, pause=2):
+	
+	for j in search(deptDict[dept_name]['query'], tld="co.in", num=10, stop=10, pause=2):
 	    deptDict[dept_name]['list'].append(j)
 
 
