@@ -7,7 +7,14 @@ import pandas as pd
 from googlesearch import search
 import spacy
 from spacy.lang.en.examples import sentences 
+import ssl
 
+try:
+    _create_unverified_https_context = ssl._create_unverified_context
+except AttributeError:
+    pass
+else:
+    ssl._create_default_https_context = _create_unverified_https_context
 
 NER = spacy.load("en_core_web_sm")
 
@@ -194,7 +201,7 @@ def index():
 
 def getLink(dept_name):
 	
-	for j in search(deptDict[dept_name]['query'], tld="co.in", num=10, stop=10, pause=2):
+	for j in search(deptDict[dept_name]['query'], tld="co.in", num=15, stop=15, pause=2):
 	    deptDict[dept_name]['list'].append(j)
 
 
