@@ -5,7 +5,11 @@ from requests.packages.urllib3.exceptions import InsecureRequestWarning
 from flask_session import Session
 import pandas as pd
 from googlesearch import search
+import spacy
+from spacy.lang.en.examples import sentences 
 
+
+NER = spacy.load("en_core_web_sm")
 
 deptDict = {
 	'Aerospace Engineering': {
@@ -152,6 +156,23 @@ def index():
 		# 			filter.append(i)
 		# 	table = filter
 
+
+		new_list=[]
+
+		for i in table:
+		    str1 = ''.join(str(e) for e in i)
+		    text1= NER(str1)
+		    for word in text1.ents:
+		        if(word.label_ == 'PERSON'):
+		            new_list.append(i);
+		            # print(word.text,word.label_)
+		            break;
+		            
+
+		print(len(table),len(new_list),"===============")
+		table = new_list
+
+
 		if 'download-csv' in req_table:
 			if(table !=None):
 				my_df = pd.DataFrame(table)
@@ -187,12 +208,13 @@ def DepartmentHardCoded(dept_name):
 	getLink(dept_name)
 	print(deptDict[dept_name]['list'])
 	for link in deptDict[dept_name]['list']:
-		
-		faculty = requests.get(link, verify=False)
-		# faculty = requests.get('https://www.me.iitb.ac.in/?q=full-time-faculty',verify=False)
-		facultyContent = faculty.content
-		soup_faculty = BeautifulSoup(facultyContent, "html.parser")
-
+		try:
+			faculty = requests.get(link, verify=False)
+			# faculty = requests.get('https://www.me.iitb.ac.in/?q=full-time-faculty',verify=False)
+			facultyContent = faculty.content
+			soup_faculty = BeautifulSoup(facultyContent, "html.parser")
+		except:
+			continue
 		try:
 
 			table_body = soup_faculty.find_all('tbody')
