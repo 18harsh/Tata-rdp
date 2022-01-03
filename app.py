@@ -16,6 +16,8 @@ except AttributeError:
 else:
     ssl._create_default_https_context = _create_unverified_https_context
 
+requests.packages.urllib3.disable_warnings
+
 NER = spacy.load("en_core_web_sm")
 
 deptDict = {
@@ -201,7 +203,7 @@ def index():
 
 def getLink(dept_name):
 	
-	for j in search(deptDict[dept_name]['query'], tld="co.in", num=15, stop=15, pause=2):
+	for j in search(deptDict[dept_name]['query'], tld="co.in", num=8, stop=8, pause=2):
 	    deptDict[dept_name]['list'].append(j)
 
 
