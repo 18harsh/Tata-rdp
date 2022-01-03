@@ -5,3 +5,5 @@ gunicorn
 flask_session
 pandas
 googlesearch-python
+spacy
+ssl
