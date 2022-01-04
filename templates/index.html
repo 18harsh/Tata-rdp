@@ -35,7 +35,7 @@
 		</form>
 		<form action="/" method="POST">
 		<div class="input-group mt-5 ">
-		  <input type="text" class="form-control" placeholder="Research Topic" aria-label="Research Topic" name="research_name" aria-describedby="button-addon2">
+		  <input type="text" class="form-control" placeholder="Research Topic" aria-label="Research Topic" name="research_name" aria-describedby="button-addon2" required>
 		  <div class="input-group-append">
 		    <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Search</button>
 		  </div>
@@ -94,7 +94,7 @@
 			
 		{% else %}
 			{% if web_prev == False %}
-				Data not Found
+				Data not Found! Try searching Topics related to it.
 			{% endif %}	
 
 		{% endif %}	
