@@ -12,4 +12,5 @@ domain information to develop, validate, and demonstrate the solution.
 
 
 # Certificate
-[Dgital Certificate for Techfest2022 - 215318_Harsh Gandhi.pdf](https://github.com/18harsh/Tata-rdp/files/8007612/Dgital.Certificate.for.Techfest2022.-.215318_Harsh.Gandhi.pdf)
+
+![Dgital Certificate for Techfest2022 - 215318_Harsh Gandhi_page-0001](https://user-images.githubusercontent.com/58548322/152633692-f957b460-46d8-4c82-8cd7-97c441440846.jpg)
