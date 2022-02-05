@@ -7,6 +7,7 @@ Teams are encouraged to design a comprehensive approach that includes scanning f
 Participating teams must develop a tool which can scout for faculty members or researchers
 active in a given research area. The participating teams must analyse potential techniques to
 crawl online to identify and compile profiles of all such matches.
+
 No ready dataset will be made available. Teams can use sample research themes and public
 domain information to develop, validate, and demonstrate the solution.
 
