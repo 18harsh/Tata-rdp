@@ -17,12 +17,19 @@ domain information to develop, validate, and demonstrate the solution.
 3) Install all the modules required from requirement.txt file (run: pip install -r requirements.txt )
 
       Flask==1.1.2 
+      
       beautifulsoup4==4.9.3 
+      
       requests==2.25.1 
+      
       flask_session 
+      
       Pandas 
+      
       googlesearch-python==1.0.1 
+      
       Spacy 
+      
       Google 
  
 4) Run the app.py python file (cmd: python app.py)
