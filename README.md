@@ -1,7 +1,7 @@
 # Tata-rdp
-<h5>
+<h3>
 Develop a tool that can autonomously identify faculty & researchers in a given area of research. The tool must also generate their profiles using the provided template.
-Teams are encouraged to design a comprehensive approach that includes scanning from academic institutions and other websites, integration with open-source repositories like google scholar, google patent, semantic scholar, and interfacing with relevant service providers.</h5>
+Teams are encouraged to design a comprehensive approach that includes scanning from academic institutions and other websites, integration with open-source repositories like google scholar, google patent, semantic scholar, and interfacing with relevant service providers.</h3>
 
 # TASK
 Participating teams must develop a tool which can scout for faculty members or researchers
